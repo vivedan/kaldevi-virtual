@@ -36,7 +36,7 @@ function RoomListBack(props){
 function RoomList(props) {
 
     const pageInfo = usePageInfo(props.page);
-    console.log(pageInfo);
+    //console.log(pageInfo);
 
     const { ref, isComponentVisible } = useComponentVisible(true);
 
@@ -44,7 +44,7 @@ function RoomList(props) {
 
     return (
         <div className="roomListCont">
-            <svg onClick={() => props.setListActive(!props.listActive)} className="burger icon" xmlns="http://www.w3.org/2000/svg" width="30" height="21" viewBox="0 0 30 21">
+            <svg onClick={() => props.setListActive(!props.listActive)} className={props.listActive ? "burger icon burgerActive" : "burger icon"} xmlns="http://www.w3.org/2000/svg" width="30" height="21" viewBox="0 0 30 21">
                 <g id="Icon_feather-menu" data-name="Icon feather-menu" transform="translate(-3 -7.5)">
                     <path id="Trazado_2" data-name="Trazado 2" d="M4.5,18h27" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"/>
                     <path id="Trazado_3" data-name="Trazado 3" d="M4.5,9h27" fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"/>

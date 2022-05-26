@@ -13,6 +13,8 @@ import Dome from './Dome';
 import ProductInfo from './ProductInfo';
 import ImageInfo from './ImageInfo';
 import Arrow from './Arrow';
+import AudioClick from './AudioClick';
+import CustomControls from './CustomControls';
 
 function Room(props) {
 
@@ -20,21 +22,23 @@ function Room(props) {
     const [imageSelected, setImageSelected] = useState(null);
     const [blur, setBlur] = useState(false);
 
+    const [firstClick, setFirstClick] = useState(false);
+
     //const [imageIndex, setIndex] = useState(0);
 
     /* useEffect(() => {
-        let i = props.projectSelected.images.indexOf(props.imageSelected);
-        setIndex(i);
-    }, []) */
+        console.log(firstClick)
+    }, [firstClick]) */
 
 
     const [target, setTarget] = useState([0, 0, 0]);
 
-    const targets = [[1.7, 0, 1.2], [0.4, 0, 1.5], [-1.7, 0, 1.5], [-1.7, 0, -0.3]]
+    const targets = [[-0.5, 0, -2.8], [1.5, 0, -0.8], [0.9, 0, 2.8], [-0.9, 0, 2.8]]
 
     useEffect(()=>{
         if(!projectSelected){
             setImageSelected(null);
+            setTarget([0, 0, 0])
         }else{
             let i = props.productData.indexOf(projectSelected);
             //setIndex(i);
@@ -42,9 +46,9 @@ function Room(props) {
         }
     }, [projectSelected])
 
-    useEffect(() => {
+    /* useEffect(() => {
         console.log(target);
-    }, [target])
+    }, [target]) */
 
     //DISCONNECT OVERLAYS AND BLUR BACKGROUND IF THE LIST OF ROOMS IS ACTIVE
     useEffect(() => {
@@ -84,9 +88,9 @@ function Room(props) {
 
     return ( 
         <div className="main-cont">
-            <animated.div style={{...canvasStyle}}>
-                <Canvas camera={ {fov: 60, near: 0.1, far: 1000, position: [0, 0, 1]} } flat>
-                    <OrbitControls target={target} enablePan={true} enableZoom={false} enableRotate={projectSelected ? false : true} />
+            <animated.div style={{...canvasStyle}} onClick={() => setFirstClick(true)}>
+                <Canvas onCreated={() => props.setLoading(false)} camera={ {fov: 60, near: 0.1, far: 1000, position: [0, 0, 1]} } flat >
+                    <CustomControls breakpoints={props.breakpoints} target={target} projectSelected={projectSelected} autoRotate={firstClick} />
                     <ambientLight />
                     <pointLight position={[10, 10, 10]} />
 
@@ -139,6 +143,7 @@ function Room(props) {
                                     projectSelected={projectSelected}
                                     setImageSelected={setImageSelected}
                                     project={props.productData[0]}
+                                    setTarget={setTarget}
                                 />
                                 <Model 
                                     src="/TV_ort_2.glb"
@@ -149,6 +154,7 @@ function Room(props) {
                                     projectSelected={projectSelected}
                                     setImageSelected={setImageSelected}
                                     project={props.productData[1]}
+                                    setTarget={setTarget}
                                 />
                                 <Model 
                                     src="/TV_ort_3.glb"
@@ -159,11 +165,12 @@ function Room(props) {
                                     projectSelected={projectSelected}
                                     setImageSelected={setImageSelected}
                                     project={props.productData[2]}
+                                    setTarget={setTarget}
                                 />
                                 <Dome panorama={'pano_tech1.jpg'}/>
-                                <Arrow position={[-5, 0, -30]} rotation={[0, 0, 0]} dir={"Entrada"} textpos={"right"} scale={4} to={"/"} />
-                                <Arrow position={[-5, 0, 30]} rotation={[0, THREE.MathUtils.degToRad(180), Math.PI]} dir={"Ortopedia\nGalería"} textpos={"left"} scale={4} to={"/ortopedia-galeria"}/>
-                                <Arrow position={[5, -10, -30]} rotation={[0, THREE.MathUtils.degToRad(0), -Math.PI/2]} dir={"Patio\nKaldevi"} textpos={"left"} scale={4} to={"/patio"} />
+                                <Arrow setLoading={props.setLoading} position={[-5, 0, -30]} rotation={[0, 0, 0]} dir={"Entrada"} textpos={"right"} scale={4} to={"/"} />
+                                <Arrow setLoading={props.setLoading} position={[-5, 0, 30]} rotation={[0, THREE.MathUtils.degToRad(180), Math.PI]} dir={"Ortopedia\nGalería"} textpos={"left"} scale={4} to={"/ortopedia-galeria"}/>
+                                <Arrow setLoading={props.setLoading} position={[5, -10, -30]} rotation={[0, THREE.MathUtils.degToRad(0), -Math.PI/2]} dir={"Patio\nKaldevi"} textpos={"left"} scale={4} to={"/patio"} />
                             </group>
                     </Suspense>
                     
@@ -171,6 +178,8 @@ function Room(props) {
             </animated.div>
             {projectSelected && <ProductInfo projectSelected={projectSelected} setProjectSelected={setProjectSelected}/> }
             {imageSelected && <ImageInfo imageSelected={imageSelected} projectSelected={projectSelected} setImageSelected={setImageSelected}/>}
+            <AudioClick clicked={projectSelected} />
+            <AudioClick clicked={blur} />
         </div>
      );
 }

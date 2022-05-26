@@ -3,26 +3,34 @@ import Room from '../components/RoomEntry';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Blur from '../components/Blur';
-import useAudio from '../hooks/useAudio';
+
+import { useBreakpoint, BreakpointProvider } from 'gatsby-plugin-breakpoints';
+import Audio from '../components/Audio';
+
+import Overlay from '../components/LoaderOverlay';
 
 const IndexPage = () => {
-  const page = "Kaldevi - Entrada";
+  const page = "Hall Kaldevi";
   const [welcome, setWelcome] = useState(true);
+  const [audio, setAudio] = useState(false);
+  const [listActive, setListActive] = useState(false);
 
-  const {audioRef, musicRef, audio, setAudio} = useAudio(welcome);
+  const breakpoints = useBreakpoint();
+
+  const [loading, setLoading] = useState(true);
  
 
   return (
     <div>
-      {!welcome && <Header setAudio={setAudio} audio={audio} page={page}/>}
-      {!welcome && <Footer />}
+      <Overlay visible={loading}/>
+      {!welcome && <Header setAudio={setAudio} audio={audio} page={page} setListActive={setListActive} listActive={listActive}/>}
+      <Footer />
       <Blur page={page} setBlur={setWelcome} blur={welcome}>
-        <Room />
+        <Room breakpoints={breakpoints} listActive={listActive} setLoading={setLoading}/>
       </Blur>
       
-      <audio ref={audioRef} src="/audios/Kaldevi_ambience1.mp3" loop></audio>
-      <audio ref={musicRef} src="/audios/Kaldevi_music_cut.mp3" loop></audio>
-      
+      <Audio audio={audio} setAudio={setAudio} isActive={welcome}/>
+
     </div>
   )
 }

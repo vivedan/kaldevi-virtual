@@ -18,11 +18,21 @@ a{
     text-decoration: none;
 }
 
+h1, h2, h3, h4{
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
 .main-cont{
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: black;
+    background: white;
 }
 
 .footerCont{
@@ -37,7 +47,7 @@ a{
 
 .rareaFooter{
     position: absolute;
-    left: 0px;
+    left: -10px;
     /* top: 50%;
     transform: translate(0%, -50%); */
     bottom: 10px;
@@ -106,14 +116,21 @@ a{
 .burger{
     position: absolute;
     /* left: -100%; */
-    left: -25%;
+    margin: 20px 0;
     z-index: 100000;
+    transform: rotate(0deg);
+    transition: all ease-in-out 0.2s;
+}
+
+.burgerActive{
+    transform: rotate(-90deg);
 }
 
 .roomTitle{
     top: 0;
     position: relative;
     z-index: 100;
+    padding: 0px 40px;
 }
 
 .roomListBack{
@@ -384,6 +401,44 @@ a{
     text-shadow: 2px 2px 8px #000000;
 }
 
+/*BLURRED OVERLAY */
+
+.blurMainCont{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 40000;
+    cursor: pointer;
+    border: double 5px transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(5, 5, 5, 0.1);
+}
+
+.blurTitle{
+    font-family: le-monde-livre-std,serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 50px;
+}
+
+.blurLogo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url("/Logo 25 aniversario negativo.svg");
+    background-repeat: no-repeat;
+    z-index: 1000000;
+    top: -50px;
+}
 
 /*OVERLAY*/
 
@@ -393,11 +448,14 @@ a{
     height: 100vh;
     margin: 0;
     position: absolute;
-    z-index: 500;
+    z-index: 50000;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    transition: all 2.5s;
+    pointer-events: none;
 }
 
 .logoOverlay{
@@ -411,14 +469,9 @@ a{
 
 .fadeOut{
     opacity:0;
-    transition: opacity 2.5s;
-    pointer-events: none;
-
 }
 .fadeIn{
     opacity:1;
-    transition: opacity 2.5s;
-    
 }
 
 .animate__animated.animate__flip{
@@ -436,3 +489,175 @@ a{
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
   }
+
+
+
+
+/* MOBILE */
+
+/* Portrait */
+@media screen and (orientation:portrait) and (max-width: 600px) {
+    /* Portrait styles here */
+    .main-cont{
+        overflow-y: hidden;
+    }
+
+    .blurMainCont{
+        width: 90vw;
+    }
+
+    .blurTitle{
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .infoBanner{
+        width: 100vw;
+        top: 50vh;
+        height: 50vh;
+        overflow-y: scroll;
+    }
+
+    .closeButton{
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        position: sticky;
+        z-index: 100000;
+    }
+
+    .relatedContent{
+        padding-bottom: 130px;
+    }
+
+    .imgRelated{
+        height: 80px;
+        width: 80px;
+    }
+
+    .imageInfoCont{
+        width: 90vw;
+        min-height: 30vh;
+        max-height: 35vh;
+        left: 5vw;
+        top: 15vh;
+        transform: translateY(0%);
+    }
+
+    .imageProduct{
+        max-height: 70%;
+        min-height: 30%;
+        max-width: 70%;
+    }
+
+    .footImg{
+        font-size: 13px;
+    }
+
+    /* .closeImage{
+        display: none;
+    } */
+
+    .roomTitle{
+        padding: 0px 0px 0px 0px;
+        width: 60vw;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .burger{
+        right: 0;
+        left: 100%;
+    }
+
+    .burgerActive{
+        transform: rotate(90deg);
+    }
+
+    .imageInfoContAlone{
+        width: 90vw;
+    }
+	
+  
+}
+
+@media screen and (orientation:portrait) and (max-width: 320px) {
+/* Portrait styles here */
+
+    
+
+}
+
+/* Landscape */
+@media screen and (orientation:landscape) and (max-height: 700px) {
+/* Landscape styles here */
+    .infoBanner{
+        overflow-y: scroll;
+    }
+
+    .closeButton{
+        position: sticky;
+        z-index: 100000;
+    }
+
+    .relatedContent{
+        padding-bottom: 130px;
+    }
+
+    .imgRelated{
+        height: 80px;
+        width: 80px;
+    }
+
+
+    .imageInfoContAlone{
+        max-height: 65vh;
+    }
+
+    .imageArrowsCont{
+        height: 100%;
+    }
+
+    .imageProduct{
+        max-height: 50vh;
+        min-height: 30vh;
+        max-width: 70%;
+    }
+
+    .roomTitle{
+        padding: 0px 0px 0px 0px;
+        width: 60vw;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .blurTitle{
+        text-align: center;
+        font-size: 35px;
+        margin: 0;
+    }
+
+    .roomListFlex{
+        flex-direction: row;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 0px;
+    }
+
+    .roomGroupTitle{
+        font-size: 25px;
+    }
+
+    .roomGroupType{
+        font-size: 18px;
+    }
+	
+
+}
+
+@media screen and (orientation:landscape) and (max-height: 320px) {
+/* Landscape styles here */
+    
+
+}

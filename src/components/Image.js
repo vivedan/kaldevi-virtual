@@ -1,7 +1,8 @@
 import { Html, Plane, useCursor, useTexture } from '@react-three/drei';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { navigate } from "gatsby";
 import * as THREE from 'three';
+import UICircle from './UICircle';
 
 import { animated, useSpring, config } from '@react-spring/three';
 
@@ -20,6 +21,8 @@ function Image(props) {
 
     useCursor(hovered);
 
+    const groupRef = useRef();
+
     /* const ImageStyles = useSpring({ 
         loop: true,
         to: [
@@ -32,14 +35,21 @@ function Image(props) {
 
     const imageStyles = useSpring({opacity: hovered ? 1 : 0.7, config: config.molasses});
     
-
+    function getCenterBB(geometry){
+        geometry.computeBoundingBox();
+        let center = new THREE.Vector3();
+        geometry.boundingBox.getCenter(center);
+        let centerArray = Object.values(center);
+        //console.log(centerArray);
+        return centerArray;
+    }
 
     function handleClick(){
         
     }
 
     return (
-        <group position={props.position} rotation={[0, props.rotation[1], 0]} scale={props.scale}>
+        <group ref={groupRef} position={props.position} rotation={[0, props.rotation[1], 0]} scale={props.scale}>
             
             <Plane 
             args={props.size}
@@ -59,6 +69,9 @@ function Image(props) {
                 emissiveMap={texture}
                 ></animated.meshStandardMaterial>
             </Plane>
+            <group position={[0, 0, 0]} rotation={[0, -Math.PI/2, 0]} scale={2}>
+                <UICircle simple/>
+            </group>
 
             
         </group>

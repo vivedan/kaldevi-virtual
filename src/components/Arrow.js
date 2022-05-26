@@ -8,7 +8,7 @@ import { a } from '@react-spring/core';
 
 import '../styles/styles.css';
 import ArrowLabel from './ArrowLabel';
-
+import AudioClick from './AudioClick';
 
 //const AnimatedHtml = animated(Html);
 
@@ -18,6 +18,7 @@ function Arrow(props) {
     const [rotation, setRotation] = useState([0, -Math.PI/2, 0]);
     const [position, setPosition] = useState(-3.2);
     const [hovered, setHovered] = useState(false);
+    const [audio, setAudio] = useState(false);
 
     useCursor(hovered);
 
@@ -46,7 +47,12 @@ function Arrow(props) {
     //[Math.PI, Math.PI, 0]
 
     function handleClick(){
-        navigate(props.to)
+        setAudio(true);
+        props.setLoading(true);
+        setTimeout(()=>{
+            navigate(props.to)
+        }, 1000)
+        
     }
 
     return (
@@ -65,6 +71,7 @@ function Arrow(props) {
             
             <Html wrapperClass='arrowLabelCont' transform rotation={[0, 0, 0]} position={[position, 0, -0.4]} style={{pointerEvents: 'none'}}>
                     <ArrowLabel textpos={props.textpos} dir={props.dir} hovered={hovered}/>
+                    <AudioClick clicked={audio} navigation/>
             </Html>
         </group>
         

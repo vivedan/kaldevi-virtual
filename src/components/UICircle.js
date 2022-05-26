@@ -34,15 +34,27 @@ function UICircle(props) {
     }
 
     return (
-        <group rotation={[0, Math.PI/2, 0]} position={props.position} onClick={(e) => handleClick(e)} onPointerEnter={() => setHovered(true)} onPointerLeave={() => setHovered(false)}>
-            <Circle args={[0.5, 32]} position={[0, 0, 0.1]}>
-                <meshBasicMaterial attach="material" color="#FFAA00" transparent opacity={0.2}/>
-            </Circle>
-            <animated.group scale={circleStyles.scale}>
-                <Circle args={[0.35, 32]} position={[0, 0, 0.2]}>
-                    <animated.meshBasicMaterial attach="material" color="#FFAA00" transparent opacity={circleStyles.opacity}/>
+        <group>
+            {!props.simple && <group rotation={[0, Math.PI/2, 0]} position={props.position} onClick={(e) => handleClick(e)} onPointerEnter={() => setHovered(true)} onPointerLeave={() => setHovered(false)}>
+                <Circle args={[0.5, 32]} position={[0, 0, 0.1]}>
+                    <meshBasicMaterial attach="material" color="#FFAA00" transparent opacity={0.2}/>
                 </Circle>
-            </animated.group>
+                <animated.group scale={circleStyles.scale}>
+                    <Circle args={[0.35, 32]} position={[0, 0, 0.2]}>
+                        <animated.meshBasicMaterial attach="material" color="#FFAA00" transparent opacity={circleStyles.opacity}/>
+                    </Circle>
+                </animated.group>
+            </group>}
+            {props.simple && <group rotation={[0, Math.PI/2, 0]} position={props.position} onPointerEnter={() => setHovered(true)} onPointerLeave={() => setHovered(false)}>
+                <Circle args={[0.5, 32]} position={[0, 0, 0.1]}>
+                    <meshBasicMaterial attach="material" color="#FFAA00" transparent opacity={0.2}/>
+                </Circle>
+                <animated.group scale={circleStyles.scale}>
+                    <Circle args={[0.35, 32]} position={[0, 0, 0.2]}>
+                        <animated.meshBasicMaterial attach="material" color="#FFAA00" transparent opacity={circleStyles.opacity}/>
+                    </Circle>
+                </animated.group>
+            </group>}
         </group>
     );
 }

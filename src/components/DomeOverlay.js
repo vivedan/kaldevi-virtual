@@ -9,7 +9,7 @@ function DomeOverlay(props) {
     //const texture = useLoader(THREE.TextureLoader, 'panorama2.jpg')
     const texture = useLoader(THREE.TextureLoader, props.panorama);
 
-    const opacity = useSpring({opacity: props.overlay ? 1 : 0, config: { mass: 1, tension: 280, friction: 200 }});
+    const opacity = useSpring({opacity: (props.overlay || props.clicked) ? 1 : 0, config: { mass: 1, tension: 280, friction: 200 }});
 
    /*  useEffect(()=>{
       console.log(props.overlay);

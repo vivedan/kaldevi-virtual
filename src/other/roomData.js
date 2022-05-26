@@ -1,12 +1,12 @@
 let entrada = {
-    title: "Kaldevi - Entrada",
+    title: "Hall Kaldevi",
     description: "",
     group: "Kaldevi",
     type: "Entrada", 
 }
 
 let patio = {
-    title: "Kaldevi - Patio",
+    title: "Patio Kaldevi",
     description: "",
     group: "Kaldevi",
     type: "Patio", 

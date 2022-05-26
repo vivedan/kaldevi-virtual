@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { navigate } from "gatsby";
 import * as THREE from 'three';
 
+import UICircle from './UICircle';
+
 import { animated, useSpring, config } from '@react-spring/three';
 
 import '../styles/styles.css';
@@ -59,7 +61,9 @@ function Image(props) {
                 emissiveMap={texture}
                 ></animated.meshStandardMaterial>
             </Plane>
-
+            <group position={[0, -3, 0]} rotation={[0, -Math.PI/2, 0]} scale={2}>
+                <UICircle simple/>
+            </group>
             
         </group>
         

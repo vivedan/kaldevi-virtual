@@ -3,21 +3,26 @@
 let pr1ZTOrtopedia = {
     room: "ztOrtopedia",
     title: "Plantillas Bauerfeind",
-    description: "Velit ea ea ex nisi enim amet qui cupidatat dolor esse ullamco officia. Et tempor laborum dolore cillum velit occaecat eu in dolor elit irure incididunt eu officia. Do anim culpa anim esse reprehenderit enim occaecat eu laboris Lorem officia duis cillum. Commodo dolore dolore exercitation dolore aliqua duis sunt anim enim non Lorem esse sunt voluptate. Non velit cupidatat adipisicing eiusmod pariatur incididunt.",
+    description: "Los pies son la base del cuerpo. Las plantillas ortopédicas descargan los pies, las articulaciones de la rodilla y de la cadera, así como la espalda. Ejercen una acción biomecánica, ayudando al pie en su funcionamiento natural. Porque cada pie tiene sus propias necesidades, Bauerfeind tiene más de 300 modelos distintos. Tenemos una plantilla adecuada para cada persona.",
     storeLink: "www.google.es",
     srcModel: "",
     images: [
         {
-            src: "/ot1/1.png",
-            description: "Las férulas 3D están revolucionando el mundo de la Ortopedia.",
+            src: "/ot2/1.jpg",
+            description: "La plantilla agrega estabilidad y mejora la postura, especialmente durante el ejercicio físico.",
         },
         {
-            src: "/ot1/2.jpg",
-            description: "Pequeñas fracturas o lesiones que antes suponían todo un quebradero de cabeza hasta el punto de tener que pasar nuestra recuperación en casa, ahora nos permiten seguir de forma natural con nuestras actividades.",
+            src: "/ot2/2.jpg",
+            description: "Proporciona a los pies sensibles un acolchado suave y amortiguador. Con ello, se pueden reducir los puntos de presión.",
         },
         {
-            src: "/ot1/3.png",
-            description: "Algo impensable con la escayola tradicional. La avanzada tecnología impresa de las férulas 3D sí lo permite.",
+            src: "/ot2/3.jpg",
+            description: "Mediante la disposición de almohadillas funcionales de diferente dureza se adapta a diferentes patrones de movimiento.",
+        },
+        
+        {
+            src: "/ot2/4.jpg",
+            description: "La plantilla amortigua suavemente todo el zapato y redistribuye los picos de presión, lo que es óptimo para las plantas de los pies doloridas.",
         },
     ],
     relatedProducts: [
@@ -81,21 +86,26 @@ let pr2ZTOrtopedia = {
 let pr3ZTOrtopedia = {
     room: "ztOrtopedia",
     title: "Tobillera Airloc",
-    description: "Velit ea ea ex nisi enim amet qui cupidatat dolor esse ullamco officia. Et tempor laborum dolore cillum velit occaecat eu in dolor elit irure incididunt eu officia. Do anim culpa anim esse reprehenderit enim occaecat eu laboris Lorem officia duis cillum. Commodo dolore dolore exercitation dolore aliqua duis sunt anim enim non Lorem esse sunt voluptate. Non velit cupidatat adipisicing eiusmod pariatur incididunt.",
+    description: "Después de una lesión grave, AirLoc, en combinación con un zapato, estabiliza el tobillo y lo protege de una nueva torcedura. Dos cubiertas de plástico acolchadas y con forma anatómica están conectadas elásticamente entre sí por debajo del talón para que la ortesis se adapte de forma óptima a la anchura del pie. Una cámara de aire hinchable en la carcasa exterior permite ajustar individualmente el AirLoc al correspondiente estado de hinchazón.",
     storeLink: "www.google.es",
     srcModel: "",
     images: [
         {
-            src: "/ot1/1.png",
-            description: "Las férulas 3D están revolucionando el mundo de la Ortopedia.",
+            src: "/ot3/1.jpg",
+            description: "AirLoc estabiliza el tobillo con dos cubiertas de plástico preformadas anatómicamente y ampliamente acolchadas en su interior.",
         },
         {
-            src: "/ot1/2.jpg",
-            description: "Pequeñas fracturas o lesiones que antes suponían todo un quebradero de cabeza hasta el punto de tener que pasar nuestra recuperación en casa, ahora nos permiten seguir de forma natural con nuestras actividades.",
+            src: "/ot3/2.jpg",
+            description: "Están conectados elásticamente por debajo del talón y se sujetan con dos correas de velcro que envuelven el tobillo y la pantorrilla.",
         },
         {
-            src: "/ot1/3.png",
-            description: "Algo impensable con la escayola tradicional. La avanzada tecnología impresa de las férulas 3D sí lo permite.",
+            src: "/ot3/3.jpg",
+            description: "Para que la ortesis no sólo se adapte a la anchura del pie, sino también a la hinchazón del tobillo lesionado, incorpora una cámara de aire adicional.",
+        },
+        
+        {
+            src: "/ot3/4.jpg",
+            description: "AirLoc te da la seguridad que necesitas para moverte correctamente y sin miedo a pesar de tu lesión, para que puedas volver a tu vida normal.",
         },
     ],
     relatedProducts: [

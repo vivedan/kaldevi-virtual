@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import { DeviceOrientationControls, OrbitControls } from '@react-three/drei';
 //import { useBreakpoint, BreakpointProvider } from 'gatsby-plugin-breakpoints';
 
@@ -8,19 +8,31 @@ import { DeviceOrientationControls, OrbitControls } from '@react-three/drei';
 function CustomControls(props) {
 
     //const breakpoints = useBreakpoint();
+    const [freeze, setFreeze] = useState(false);
+
+    useEffect(() => {
+        //console.log(props.target)
+        if(props.projectSelected){
+            setFreeze(true);
+        }else{
+            setFreeze(false);
+        }
+    }, [props.target])
+
 
     return (
         <group>
             <OrbitControls 
                         enablePan={true} 
                         enableZoom={false} 
-                        enableRotate={true} 
-                        rotateSpeed={0.25}
-                        autoRotate={false} 
-                        autoRotateSpeed={0.5}
+                        enableRotate={!freeze} 
+                        rotateSpeed={0.15}
+                        autoRotate={!props.autoRotate} 
+                        autoRotateSpeed={0.3}
                         enableDamping
-                        dampingFactor={0.08} />
-            {props.breakpoints.sm && <DeviceOrientationControls />}
+                        dampingFactor={0.08} 
+                        target={ props.target }/>
+            {props.breakpoints.sm && <DeviceOrientationControls enabled={props.projectSelected ? false : true} />}
         </group>
     );
 }

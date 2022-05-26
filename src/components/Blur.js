@@ -15,7 +15,7 @@ function Blur({page, blur, setBlur, children}) {
         cursor: blur ? "pointer" : "default",
     }
 
-    const mainStyles = {
+    /* const mainStyles = {
         position: "absolute",
         margin: 0,
         padding: 0,
@@ -27,17 +27,18 @@ function Blur({page, blur, setBlur, children}) {
         justifyContent: "center",
         zIndex: 40000,
         cursor: "pointer"
-    }
+    } */
 
     return (
         <div>
-            {blur && <div style={mainStyles} onClick={() => setBlur(false)}>
-                <h2>Bienvenidos a la tienda virtual Kaldevi.</h2>
+            {blur && <div className="blurMainCont" onClick={() => setBlur(false)}>
+                <div className="blurLogo"></div>
+                {/* <h2>Bienvenidos a la tienda virtual Kaldevi.</h2> */}
                 <h2>ENTRAR A</h2>
-                <h1>{page}</h1>
+                <h1 className="blurTitle">{page}</h1>
                 
             </div>}
-            
+
             <div style={{filter: blur ? "blur(12px)" : "blur(0px)",}} >
                 <div style={styles}></div>
                 {children}

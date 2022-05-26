@@ -57,10 +57,11 @@ function Model(props) {
 
     function handleImageClick(e){
         //console.log(e.object.name);
-        //console.log(e.object);
-        if(clicked){
-            props.setImageSelected(props.project.images[e.object.name]);
-        }else{setClicked(true)}
+        const pos = new THREE.Vector3();
+        e.object.getWorldPosition(pos);
+        //props.setTarget(pos);
+        //console.log(pos);
+        setClicked(true)
         
     }
 
@@ -91,7 +92,8 @@ function Model(props) {
                     material-color={color.color}
                     scale={1}
                     name={0}
-                    onClick={(e) => setClicked(true)}
+                    /* onClick={(e) => setClicked(true)} */
+                    onClick={(e) => handleImageClick(e)}
                     onPointerEnter={() => {if(!clicked) setHovered(true)}}
                     onPointerLeave={() => setHovered(false)}
                 >

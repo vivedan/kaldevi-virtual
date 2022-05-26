@@ -66,7 +66,7 @@ export default function Audio({isActive, audio, setAudio}){
     }
 
     return (
-      <div>
+      <div style={{display: "none"}}>
         <audio ref={audioRef} src="/audios/Kaldevi_ambience1.mp3" loop></audio>
         <audio ref={musicRef} src="/audios/Kaldevi_music_cut.mp3" loop></audio>
       </div>
