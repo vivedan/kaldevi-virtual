@@ -5,8 +5,8 @@ import {animated, useSpring, config} from 'react-spring';
 function ArrowLabel(props) {
 
     const textStyles = useSpring({
-        opacity: props.hovered ? 1: 0, 
-        width: props.hovered ? '200px' : '0px', 
+        opacity: (props.hovered || props.breakpoints.sm) ? 1: 0, 
+        width: (props.hovered || props.breakpoints.sm) ? '200px' : '0px', 
         config: config.molasses,
     })
 

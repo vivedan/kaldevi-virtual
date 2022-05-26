@@ -70,7 +70,7 @@ function Arrow(props) {
             </Plane>
             
             <Html wrapperClass='arrowLabelCont' transform rotation={[0, 0, 0]} position={[position, 0, -0.4]} style={{pointerEvents: 'none'}}>
-                    <ArrowLabel textpos={props.textpos} dir={props.dir} hovered={hovered}/>
+                    <ArrowLabel breakpoints={props.breakpoints} textpos={props.textpos} dir={props.dir} hovered={hovered}/>
                     <AudioClick clicked={audio} navigation/>
             </Html>
         </group>
