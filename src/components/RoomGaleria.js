@@ -95,8 +95,8 @@ function Room(props) {
                                     </group>
                                 </group>
                                 
-                                <Dome panorama={'pano_art1.jpg'}/>
-                                <DomeOverlay panorama={'pano_art1_b.jpg'} overlay={overlay} clicked={clicked} />
+                                <Dome panorama={'/pano_art1.jpg'}/>
+                                <DomeOverlay panorama={'/pano_art1_b.jpg'} overlay={overlay} clicked={clicked} />
                                 <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[35, 0, -20]} dir={"Ortopedia\nZona Técnica"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(-90), 0]} scale={4} to={"/ortopedia-tecnica"}/>
                                 <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[-15, -7, -40]} dir={"Entrada"} textpos={"left"} rotation={[0, THREE.MathUtils.degToRad(45), Math.PI]} scale={5} to={"/"}/>
                                 {(overlay || clicked) && <group>

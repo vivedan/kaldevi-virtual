@@ -167,7 +167,7 @@ function Room(props) {
                                     project={props.productData[2]}
                                     setTarget={setTarget}
                                 />
-                                <Dome panorama={'pano_tech1.jpg'}/>
+                                <Dome panorama={'/pano_tech1.jpg'}/>
                                 <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[-5, 0, -30]} rotation={[0, 0, 0]} dir={"Entrada"} textpos={"right"} scale={4} to={"/"} />
                                 <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[-5, 0, 30]} rotation={[0, THREE.MathUtils.degToRad(180), Math.PI]} dir={"Ortopedia\nGalería"} textpos={"left"} scale={4} to={"/ortopedia-galeria"}/>
                                 <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[5, -10, -30]} rotation={[0, THREE.MathUtils.degToRad(0), -Math.PI/2]} dir={"Patio\nKaldevi"} textpos={"left"} scale={4} to={"/patio"} />
