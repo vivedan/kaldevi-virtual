@@ -26,7 +26,7 @@ function CustomControls(props) {
                         enablePan={true} 
                         enableZoom={false} 
                         enableRotate={!freeze} 
-                        rotateSpeed={props.breakpoints.sm ? 0.3 : 0.15}
+                        rotateSpeed={props.breakpoints.sm ? 0.6 : 0.15}
                         autoRotate={!props.autoRotate} 
                         autoRotateSpeed={0.3}
                         enableDamping
