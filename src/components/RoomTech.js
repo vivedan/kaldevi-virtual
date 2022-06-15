@@ -72,6 +72,7 @@ function Room(props) {
         height: "100vh",
         width: "100vw",
         filter: blur ? "blur(8px)" : "blur(0px)",
+        mixBlendMode: props.welcome ? "hard-light" : "normal",
     }
 
     /* useEffect(()=>{
@@ -165,6 +166,17 @@ function Room(props) {
                                     projectSelected={projectSelected}
                                     setImageSelected={setImageSelected}
                                     project={props.productData[2]}
+                                    setTarget={setTarget}
+                                />
+                                <Model 
+                                    src="/TV_ort_4.glb"
+                                    position={[-707, -152, 61]} 
+                                    rotation={[0, THREE.MathUtils.degToRad(-45), 0]} 
+                                    scale={43.4}
+                                    setProjectSelected={setProjectSelected}
+                                    projectSelected={projectSelected}
+                                    setImageSelected={setImageSelected}
+                                    project={props.productData[3]}
                                     setTarget={setTarget}
                                 />
                                 <Dome panorama={'/pano_tech1.jpg'}/>

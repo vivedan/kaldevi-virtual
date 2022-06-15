@@ -11,7 +11,7 @@ function Blur({page, blur, setBlur, children}) {
         width: "100vw",
         
         pointerEvents: blur ? "all" : "none",
-        zIndex: 30000,
+        /* zIndex: 30000, */
         cursor: blur ? "pointer" : "default",
     }
 
@@ -31,18 +31,26 @@ function Blur({page, blur, setBlur, children}) {
 
     return (
         <div>
+            
+            <div style={{filter: blur ? "blur(12px) saturate(1.5) contrast(1.2) brightness(0.9)" : "blur(0px)",}} >
+                
+                <div style={styles}></div>
+                {children}
+                
+            </div>
+
+            {/* <div className="blurBackground"></div> */}
+            
             {blur && <div className="blurMainCont" onClick={() => setBlur(false)}>
+                <div className="blurBackground"></div>
                 <div className="blurLogo"></div>
-                {/* <h2>Bienvenidos a la tienda virtual Kaldevi.</h2> */}
-                <h2>ENTRAR A</h2>
+                <h2 className="blurEnter">ENTRAR A</h2>
                 <h1 className="blurTitle">{page}</h1>
+                <div className="arrowDown"></div>
                 
             </div>}
 
-            <div style={{filter: blur ? "blur(12px)" : "blur(0px)",}} >
-                <div style={styles}></div>
-                {children}
-            </div>
+            
         </div>
     );
 }

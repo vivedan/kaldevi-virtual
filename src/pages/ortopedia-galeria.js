@@ -24,7 +24,7 @@ const IndexPage = () => {
       {!welcome && <Header setAudio={setAudio} audio={audio} page={page} setListActive={setListActive} listActive={listActive}/>}
       <Footer />
       <Blur page={page} setBlur={setWelcome} blur={welcome}>
-        <Room breakpoints={breakpoints} listActive={listActive} setLoading={setLoading}/>
+        <Room breakpoints={breakpoints} listActive={listActive} setLoading={setLoading} welcome={welcome}/>
       </Blur>
 
       <Audio audio={audio} setAudio={setAudio} isActive={welcome}/>

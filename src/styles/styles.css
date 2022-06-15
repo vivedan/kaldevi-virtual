@@ -32,7 +32,7 @@ h1, h2, h3, h4{
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: white;
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 100%);
 }
 
 .footerCont{
@@ -203,6 +203,7 @@ h1, h2, h3, h4{
     height: 100vh;
     background: linear-gradient(180deg, rgba(67, 67, 67, 0.841) 0%, rgba(109, 109, 109, 0.808) 100%);
     color: white;
+    overflow-y: scroll;
 }
 
 /* .closeButton{
@@ -212,7 +213,8 @@ h1, h2, h3, h4{
 
 .closeButton{
     position: absolute;
-    left: -30px;
+    right: 32vw;
+    z-index: 40000;
     top: 50%;
     transform: translateY(-50%);
     color: rgba(67, 67, 67, 1);
@@ -232,7 +234,7 @@ h1, h2, h3, h4{
     min-height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .titleCont{
@@ -277,6 +279,10 @@ h1, h2, h3, h4{
     background: white;
     color: black;
     cursor: pointer;
+}
+
+.relatedCont{
+    padding-bottom: 20px;
 }
 
 .imgRelatedCont{
@@ -403,7 +409,7 @@ h1, h2, h3, h4{
 
 /*BLURRED OVERLAY */
 
-.blurMainCont{
+/* .blurMainCont{
     position: absolute;
     margin: 0;
     padding: 0;
@@ -421,23 +427,84 @@ h1, h2, h3, h4{
     transform: translate(-50%, -50%);
     color: white;
     background: rgba(5, 5, 5, 0.1);
+} */
+
+.blurMainCont{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    cursor: pointer;
+    border: double 5px transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.blurBackground{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    /* z-index: 10000; */
+    height: 100vh;
+    width: 100vw;
+    cursor: pointer;
+    background: url('/pointmask.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: hard-light;
+    opacity: 0.4;
 }
 
 .blurTitle{
-    font-family: le-monde-livre-std,serif;
+    position: relative;
+    font-family: le-monde-livre-classic-byol,serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 50px;
+    font-size: 70px;
+    letter-spacing: 5px;
+    z-index: 1000000;
+    margin: 0;
+    text-align: center;
+}
+
+.blurEnter{
+    position: relative;
+    font-family: futura-pt, sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 9px;
+    bottom: 20px;
+    z-index: 1000000;
 }
 
 .blurLogo{
     position: absolute;
-    width: 100px;
-    height: 100px;
-    background: url("/Logo 25 aniversario negativo.svg");
+    width: 70px;
+    height: 70px;
+    background: url("/Logo 25 aniversario blanco.svg");
     background-repeat: no-repeat;
     z-index: 1000000;
     top: -50px;
+}
+
+.arrowDown{
+    position: relative;
+    top: 10vh;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 30px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 /*OVERLAY*/
@@ -506,6 +573,10 @@ h1, h2, h3, h4{
         width: 90vw;
     }
 
+    .blurEnter{
+        font-size: 15px;
+    }
+
     .blurTitle{
         text-align: center;
         font-size: 45px;
@@ -520,9 +591,9 @@ h1, h2, h3, h4{
 
     .closeButton{
         left: 50%;
-        top: 0;
+        /* top: 0; */
         transform: translateX(-50%);
-        position: sticky;
+        /* position: sticky; */
         z-index: 100000;
     }
 
@@ -577,6 +648,15 @@ h1, h2, h3, h4{
     .imageInfoContAlone{
         width: 90vw;
     }
+
+    .rareaFooter{
+        width: 80px;
+        height: 80px;
+    }
+
+    .arrowDown{
+        padding: 10px;
+    }
 	
   
 }
@@ -596,7 +676,7 @@ h1, h2, h3, h4{
     }
 
     .closeButton{
-        position: sticky;
+        /* position: sticky; */
         z-index: 100000;
     }
 
@@ -631,9 +711,14 @@ h1, h2, h3, h4{
         text-align: center;
     }
 
+    .blurEnter{
+        font-size: 15px;
+        bottom: -10px;
+    }
+
     .blurTitle{
         text-align: center;
-        font-size: 35px;
+        font-size: 45px;
         margin: 0;
     }
 
@@ -653,6 +738,16 @@ h1, h2, h3, h4{
         font-size: 18px;
     }
 	
+    .rareaFooter{
+        width: 80px;
+        height: 80px;
+    }
+
+    .arrowDown{
+        padding: 10px;
+        top: 0;
+        display: none;
+    }
 
 }
 

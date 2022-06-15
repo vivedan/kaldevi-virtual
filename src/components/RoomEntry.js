@@ -50,6 +50,7 @@ function Room(props) {
         height: "100vh",
         width: "100vw",
         filter: blur ? "blur(8px)" : "blur(0px)",
+        mixBlendMode: props.welcome ? "hard-light" : "normal",
     }
 
     useEffect(()=>{
@@ -62,7 +63,9 @@ function Room(props) {
 
     return ( 
         <div className="main-cont">
+            
             <animated.div style={{...canvasStyle}} onClick={() => setFirstClick(true)} >
+                {/* <div className="blurBackground"></div> */}
                 <Canvas 
                 onCreated={() => props.setLoading(false)}
                 camera={ {fov: 60, near: 0.1, far: 1000, position: [0, 0, 1]} } 
@@ -98,11 +101,14 @@ function Room(props) {
                     </Suspense>
                     
                 </Canvas>
+                
             </animated.div>
+            
             {clicked && <Video setClicked={setClicked} />}
             {/* {projectSelected && <ProductInfo setProjectSelected={setProjectSelected}/> }
             {imageSelected && <ImageInfo setImageSelected={setImageSelected}/>} */}
             <AudioClick clicked={blur} />
+            
         </div>
      );
 }

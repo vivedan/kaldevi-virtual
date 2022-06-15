@@ -107,6 +107,7 @@ let pr3ZTOrtopedia = {
             src: "/ot3/4.jpg",
             description: "AirLoc te da la seguridad que necesitas para moverte correctamente y sin miedo a pesar de tu lesión, para que puedas volver a tu vida normal.",
         },
+        
     ],
     relatedProducts: [
         {
@@ -127,6 +128,56 @@ let pr3ZTOrtopedia = {
     ]
 }
 
-let productData = [pr1ZTOrtopedia, pr2ZTOrtopedia, pr3ZTOrtopedia]
+
+let pr4ZTOrtopedia = {
+    room: "ztOrtopedia",
+    title: "El Soporte de Mi Abuelo",
+    description: "La finalidad de El Soporte de Mi Abuelo es que aquellas personas que sufran las consecuencias del paso de los años o la pérdida de movilidad puedan mejorar su calidad de vida, preservando su intimidad e independencia a la hora de vestirse. Porque el fin último del proyecto es que sea accesible a todos los bolsillos y que todo el que sufra de la necesidad que se pretende subsanar, pueda permitírselo. El fundador ilicitano, José María Almira, tras más de 40 años desde que inventó y comercializó el ya muy conocido pincho de la sombrilla, a sus 93 años ha creado un soporte de ayuda para la puesta de pañales, ropa interior y pantalones. Tras una caída de la mujer del inventor, la cual la dejó necesitada de ayuda externa para vestirse, como consecuencia de la imposibilidad de agacharse.",
+    storeLink: "https://www.elsoportedemiabuelo.com/",
+    srcModel: "",
+    images: [
+        {
+            src: "/ot4/1.jpg",
+            description: "PASO 2. COLOCAREMOS LA ROPA INTERIOR / PAÑAL / PANTALÓN EN LOS EXTREMOS DEL SOPORTE, QUEDANDO SUJETA POR LOS CUATRO VELCROS PARA QUE NO SE RESBALE.",
+        },
+        {
+            src: "/ot4/2.jpg",
+            description: "PASO 3. APOYAREMOS EL SOPORTE EN EL SUELO CON LA PRENDA YA SUJETA E INTRODUCIREMOS LOS PIES EN LAS ABERTURAS DE LA PRENDA.",
+        },
+        {
+            src: "/ot4/3.jpg",
+            description: "PASO 4. SUBIMOS EL SOPORTE HASTA UNA ALTURA SUPERIOR A LAS RODILLAS, DONDE RESULTE CÓMODO ALCANZAR LA PRENDA CON LAS MANOS.",
+        },
+        
+        {
+            src: "/ot4/4.jpg",
+            description: "Mejoremos la calidad de vida de aquellas personas que se vean afectadas por el paso de los años o la pérdida de movilidad, evitando que dependan de un tercero para vestirse.",
+        },
+        
+        {
+            src: "/ot4/5.jpg",
+            description: "PASO 1. COGEMOS LA VARILLA POR EL MANGO Y, MEDIANTE MOVIMIENTOS CIRCULARES, LA INTRODUCIMOS EN LA BASE DEL SOPORTE.",
+        },
+    ],
+    relatedProducts: [
+        {
+            src: "",
+            title: "",
+            link: "",
+        },
+        {
+            src: "",
+            title: "",
+            link: "",
+        },
+        {
+            src: "",
+            title: "",
+            link: "",
+        },
+    ]
+}
+
+let productData = [pr1ZTOrtopedia, pr2ZTOrtopedia, pr3ZTOrtopedia, pr4ZTOrtopedia]
 
 export default productData;

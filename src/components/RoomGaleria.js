@@ -48,6 +48,7 @@ function Room(props) {
         height: "100vh",
         width: "100vw",
         filter: blur ? "blur(8px)" : "blur(0px)",
+        mixBlendMode: props.welcome ? "hard-light" : "normal",
     }
 
 
