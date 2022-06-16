@@ -84,7 +84,7 @@ function Room(props) {
 
                             <Image 
                                 position={[310, -65, -395]} 
-                                src={"/patio_1_handle.jpg"} 
+                                src={"/patio_2_handle.jpg"} 
                                 rotation={[0, THREE.MathUtils.degToRad(-55), 0]} 
                                 scale={20} 
                                 size={[6.5, 14]}
@@ -94,7 +94,7 @@ function Room(props) {
                                 setImageSelected={setImageSelected}/>
                             <Image 
                                 position={[-282, -135, 600]} 
-                                src={"/patio_2_handle.jpg"} 
+                                src={"/patio_3_handle.jpg"} 
                                 rotation={[0, THREE.MathUtils.degToRad(-190), 0]} 
                                 scale={42} 
                                 size={[6.5, 14]}
@@ -104,7 +104,7 @@ function Room(props) {
                                 setImageSelected={setImageSelected}/>
                             <Image 
                                 position={[-382, -115, -400]} 
-                                src={"/patio_3_handle.jpg"} 
+                                src={"/patio_1_handle.jpg"} 
                                 rotation={[0, THREE.MathUtils.degToRad(-300), 0]} 
                                 scale={35} 
                                 size={[6.5, 14]}
