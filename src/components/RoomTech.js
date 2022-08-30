@@ -136,7 +136,7 @@ function Room(props) {
                             />*/}
                             <group rotation={[0, THREE.MathUtils.degToRad(100), 0]}>
                                 <Model 
-                                    src="/TV_ort_1.glb"
+                                    src={props.productData[0].srcModel}
                                     position={[398, -140, -247]} 
                                     rotation={[0, THREE.MathUtils.degToRad(-135), 0]} 
                                     scale={39.8}
@@ -147,7 +147,7 @@ function Room(props) {
                                     setTarget={setTarget}
                                 />
                                 <Model 
-                                    src="/TV_ort_2.glb"
+                                    src={props.productData[1].srcModel}
                                     position={[632, -128.5, 149]} 
                                     rotation={[0, THREE.MathUtils.degToRad(115), 0]} 
                                     scale={36.6}
@@ -158,7 +158,7 @@ function Room(props) {
                                     setTarget={setTarget}
                                 />
                                 <Model 
-                                    src="/TV_ort_3.glb"
+                                    src={props.productData[2].srcModel}
                                     position={[-307, -163, 370]} 
                                     rotation={[0, THREE.MathUtils.degToRad(70), 0]} 
                                     scale={46.7}
@@ -169,7 +169,7 @@ function Room(props) {
                                     setTarget={setTarget}
                                 />
                                 <Model 
-                                    src="/TV_ort_4.glb"
+                                    src={props.productData[3].srcModel}
                                     position={[-707, -152, 61]} 
                                     rotation={[0, THREE.MathUtils.degToRad(-45), 0]} 
                                     scale={43.4}
@@ -179,10 +179,11 @@ function Room(props) {
                                     project={props.productData[3]}
                                     setTarget={setTarget}
                                 />
-                                <Dome panorama={'/pano_tech1.jpg'}/>
-                                <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[-5, 0, -30]} rotation={[0, 0, 0]} dir={"Entrada"} textpos={"right"} scale={4} to={"/"} />
+                                <Dome panorama={props.panorama}/>
+                                {props.children}
+                                {/* <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[-5, 0, -30]} rotation={[0, 0, 0]} dir={"Entrada"} textpos={"right"} scale={4} to={"/"} />
                                 <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[-5, 0, 30]} rotation={[0, THREE.MathUtils.degToRad(180), Math.PI]} dir={"Ortopedia\nGalería"} textpos={"left"} scale={4} to={"/ortopedia-galeria"}/>
-                                <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[5, -10, -30]} rotation={[0, THREE.MathUtils.degToRad(0), -Math.PI/2]} dir={"Patio\nKaldevi"} textpos={"left"} scale={4} to={"/patio"} />
+                                <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[5, -10, -30]} rotation={[0, THREE.MathUtils.degToRad(0), -Math.PI/2]} dir={"Patio\nKaldevi"} textpos={"left"} scale={4} to={"/patio"} /> */}
                             </group>
                     </Suspense>
                     

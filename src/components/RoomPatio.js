@@ -80,6 +80,8 @@ function Room(props) {
                             <Dome panorama={'/pano_patio.jpg'}/>
                             
                             <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[35, 0, 0]} dir={"Ortopedia\nZona Técnica"} textpos={"right"} rotation={[0, -Math.PI/2, 0]} scale={4} to={"/ortopedia-tecnica"}/>
+                            <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[2, -8, -25]} dir={"Bienestar\nZona Técnica"} textpos={"right"} rotation={[0, 0, -Math.PI/2]} scale={4} to={"/bienestar-tecnica"}/>
+                            <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[-25, -12, 15]} dir={"Movilidad\nZona Técnica"} textpos={"left"} rotation={[0, THREE.MathUtils.degToRad(110), -Math.PI/2]} scale={5} to={"/movilidad-tecnica"}/>
                             <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[10, -5, 35]} dir={"Entrada"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(225), -Math.PI/2]} scale={4} to={"/"}/>
 
                             <Image 

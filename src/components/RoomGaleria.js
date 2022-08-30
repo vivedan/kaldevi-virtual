@@ -79,11 +79,11 @@ function Room(props) {
                                 setImageSelected={setImageSelected}
                                 /> */}
                             <group rotation={[0, THREE.MathUtils.degToRad(80), 0]}>
-                                <group position={[85, 10, -12]} >
+                                <group position={props.detectorPosition} >
                                     <Plane 
                                         
                                         scale={[13, 35, 1]} 
-                                        rotation={[0, THREE.MathUtils.degToRad(-90), THREE.MathUtils.degToRad(-15)]}
+                                        rotation={props.detectorRotation}
                                         material-transparent
                                         material-opacity={0}
                                         onPointerEnter={()=>setOverlay(true)}
@@ -96,10 +96,9 @@ function Room(props) {
                                     </group>
                                 </group>
                                 
-                                <Dome panorama={'/pano_art1.jpg'}/>
-                                <DomeOverlay panorama={'/pano_art1_b.jpg'} overlay={overlay} clicked={clicked} />
-                                <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[35, 0, -20]} dir={"Ortopedia\nZona Técnica"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(-90), 0]} scale={4} to={"/ortopedia-tecnica"}/>
-                                <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[-15, -7, -40]} dir={"Entrada"} textpos={"left"} rotation={[0, THREE.MathUtils.degToRad(45), Math.PI]} scale={5} to={"/"}/>
+                                <Dome panorama={props.panorama}/>
+                                <DomeOverlay panorama={props.panoramaB} overlay={overlay} clicked={clicked} />
+                                {props.children}
                                 {(overlay || clicked) && <group>
                                     <Comment 
                                         position={[55, -10, -30]} 
