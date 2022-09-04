@@ -11,6 +11,7 @@ import Audio from '../components/Audio';
 import Overlay from "../components/LoaderOverlay";
 
 import Arrow from "../components/Arrow";
+import { SEO } from "../components/seo"
 
 import * as THREE from 'three';
 
@@ -47,3 +48,7 @@ const BienestarTecnica = () => {
 }
 
 export default BienestarTecnica
+
+export const Head = () => (
+  <SEO />
+)

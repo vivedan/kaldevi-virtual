@@ -13,6 +13,7 @@ import Overlay from "../components/LoaderOverlay";
 import Arrow from "../components/Arrow";
 
 import * as THREE from 'three';
+import { SEO } from "../components/seo"
 
 const MovilidadTecnica = () => {
   const page = "Movilidad - Zona Técnica";
@@ -47,3 +48,7 @@ const MovilidadTecnica = () => {
 }
 
 export default MovilidadTecnica
+
+export const Head = () => (
+  <SEO />
+)
