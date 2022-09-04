@@ -8,7 +8,7 @@ import { useBreakpoint, BreakpointProvider } from 'gatsby-plugin-breakpoints';
 import Audio from '../components/Audio';
 
 import Overlay from '../components/LoaderOverlay';
-import { SEO } from "../components/SEO"
+import { Seo } from "../components/SEO"
 
 const IndexPage = () => {
   const page = "Hall Kaldevi";
@@ -38,6 +38,8 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => (
-  <SEO />
-)
+export function Head() {
+  return(
+    <Seo />
+  )
+}

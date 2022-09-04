@@ -12,7 +12,7 @@ import Overlay from "../components/LoaderOverlay";
 import Arrow from "../components/Arrow";
 
 import * as THREE from 'three';
-import { SEO } from "../components/SEO"
+import { Seo } from "../components/SEO"
 
 const OrtopediaTecnica = () => {
   const page = "Ortopedia - Zona Técnica";
@@ -49,6 +49,8 @@ const OrtopediaTecnica = () => {
 
 export default OrtopediaTecnica
 
-export const Head = () => (
-  <SEO />
-)
+export function Head() {
+  return(
+    <Seo />
+  )
+}

@@ -11,7 +11,7 @@ import Overlay from '../components/LoaderOverlay';
 
 import * as THREE from 'three';
 import Arrow from '../components/Arrow';
-import { SEO } from "../components/SEO"
+import { Seo } from "../components/SEO"
 
 const IndexPage = () => {
   const page = "Bienestar - Galería";
@@ -51,6 +51,8 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => (
-  <SEO />
-)
+export function Head() {
+  return(
+    <Seo />
+  )
+}

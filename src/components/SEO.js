@@ -1,15 +1,15 @@
 import React from "react"
 import { useSiteMetadata } from "../hooks/useSiteMetadata"
 
-export const SEO = ({ title, description, pathname, children }) => {
-  const { title: defaultTitle, description: defaultDescription, image, siteUrl, twitterUsername } = useSiteMetadata()
+export const Seo = ({ title, description, pathname, children }) => {
+  const { title: defaultTitle, description: defaultDescription, image, siteUrl, author } = useSiteMetadata()
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
     image: `${siteUrl}${image}`,
     url: `${siteUrl}${pathname || ``}`,
-    twitterUsername,
+    author,
   }
 
   return (
@@ -23,7 +23,7 @@ export const SEO = ({ title, description, pathname, children }) => {
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
       <meta name="twitter:creator" content={seo.author} />
-      <link rel="icon" href="/static/Kaldevi_Icon192.png" />
+      <link rel="icon" href="Kaldevi_Icon192.png" />
       <link rel="manifest" href="../other/manifest.json"></link>
       {children}
     </>
