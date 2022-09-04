@@ -8,7 +8,7 @@ import { useBreakpoint, BreakpointProvider } from 'gatsby-plugin-breakpoints';
 import Audio from '../components/Audio';
 
 import Overlay from '../components/LoaderOverlay';
-import { SEO } from "../components/seo"
+import { SEO } from "../components/SEO"
 
 const IndexPage = () => {
   const page = "Patio Kaldevi";

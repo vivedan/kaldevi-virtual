@@ -13,7 +13,7 @@ import Overlay from "../components/LoaderOverlay";
 import Arrow from "../components/Arrow";
 
 import * as THREE from 'three';
-import { SEO } from "../components/seo"
+import { SEO } from "../components/SEO"
 
 const MovilidadTecnica = () => {
   const page = "Movilidad - Zona Técnica";

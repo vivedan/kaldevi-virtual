@@ -11,7 +11,7 @@ import Overlay from '../components/LoaderOverlay';
 
 import * as THREE from 'three';
 import Arrow from '../components/Arrow';
-import { SEO } from "../components/seo"
+import { SEO } from "../components/SEO"
 
 const IndexPage = () => {
   const page = "Ortopedia - Galería";

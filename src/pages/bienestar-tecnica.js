@@ -11,7 +11,7 @@ import Audio from '../components/Audio';
 import Overlay from "../components/LoaderOverlay";
 
 import Arrow from "../components/Arrow";
-import { SEO } from "../components/seo"
+import { SEO } from "../components/SEO"
 
 import * as THREE from 'three';
 
