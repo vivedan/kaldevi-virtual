@@ -2,8 +2,8 @@
 
 let pr1ZTBienestar = {
     room: "ztBienestar",
-    title: "Cama ECO - FMB",
-    description: "Apropiada para usuarios válidos y asistidos. Además de las articulaciones para respaldo y rodillas, dispone de CARRO ELEVADOR, que ayuda a la salida y entrada del usuario de la cama, además al cuidador a la tarea de hacer la cama, y adaptar la altura sin necesidad de forzar postura. También ayuda para la consulta de enfermería. Se le pueden añadir potencia y portasueros.",
+    title: "Cama ECO ",
+    description: "Cama de FMB, apropiada para usuarios válidos y asistidos. Además de las articulaciones para respaldo y rodillas, dispone de CARRO ELEVADOR, que ayuda a la salida y entrada del usuario de la cama, además al cuidador a la tarea de hacer la cama, y adaptar la altura sin necesidad de forzar postura. También ayuda para la consulta de enfermería. Se le pueden añadir potencia y portasueros.",
     storeLink: "https://kaldevi.com/producto/cama-geriatrica-geseko/",
     srcModel: "/TV_bien_1.glb",
     images: [
@@ -49,8 +49,8 @@ let pr1ZTBienestar = {
 
 let pr2ZTBienestar = {
     room: "ztBienestar",
-    title: "Sillón Cocoon - Innovsa",
-    description: "El sillón COCOON es muy cómodo y de múltiples posiciones. Se puede usar tanto en el hogar como en los centros sociosanitarios, debido a su revestimiento, fácil de limpiar.",
+    title: "Sillón Cocoon",
+    description: "El sillón COCOON de Innovsa es muy cómodo y de múltiples posiciones. Se puede usar tanto en el hogar como en los centros sociosanitarios, debido a su revestimiento, fácil de limpiar.",
     storeLink: "https://kaldevi.com/producto/sillon-relax-cocoon-xxl-electrico/",
     srcModel: "/TV_bien_2.glb",
     images: [
@@ -96,8 +96,8 @@ let pr2ZTBienestar = {
 
 let pr3ZTBienestar = {
     room: "ztBienestar",
-    title: "Electroestimulador Genesy 1500 - Global",
-    description: "Electroestimulador Globus Genesy 1500 de 4 Canales Profesional. Genesy 1500 es extraordinariamente potente y seguro de utilizar en cualquier situación, además está equipado con todas las corrientes utilizadas en los campos médicos, rehabilitación y deportivo. Contiene un conjunto completo de programas para cada tipo de necesidad y todos los tipos de corrientes más comunes. 414 Programas.",
+    title: "Electroestimulador Genesy 1500",
+    description: "Electroestimulador Globus Genesy 1500 de 4 Canales Profesional, de Global. Genesy 1500 es extraordinariamente potente y seguro de utilizar en cualquier situación, además está equipado con todas las corrientes utilizadas en los campos médicos, rehabilitación y deportivo. Contiene un conjunto completo de programas para cada tipo de necesidad y todos los tipos de corrientes más comunes. 414 Programas.",
     storeLink: "https://kaldevi.com/producto/aparato-electroestimulacion-genesy-3000-rehab/",
     srcModel: "/TV_bien_3.glb",
     images: [
@@ -145,8 +145,8 @@ let pr3ZTBienestar = {
 
 let pr4ZTBienestar = {
     room: "ztBienestar",
-    title: "Silla de baño Clean - Karinter",
-    description: "Silla de ducha cómoda, segura y de fácil de manejo. Por su calidad, resistencia y fiabilidad, se recomienda para un uso intensivo y frecuente. Con 4 ruedas, 2 de ellas con freno y apertura del asiento por detrás, garantiza la máxima intimidad para el cuidador y el usuario.",
+    title: "Silla de baño Clean",
+    description: "La silla de ducha de Karinter es cómoda, segura y de fácil de manejo. Por su calidad, resistencia y fiabilidad, se recomienda para un uso intensivo y frecuente. Con 4 ruedas, 2 de ellas con freno y apertura del asiento por detrás, garantiza la máxima intimidad para el cuidador y el usuario.",
     storeLink: "https://kaldevi.com/producto/silla-de-ducha-clean/",
     srcModel: "/TV_bien_4.glb",
     images: [

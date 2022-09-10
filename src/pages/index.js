@@ -19,15 +19,17 @@ const IndexPage = () => {
   const breakpoints = useBreakpoint();
 
   const [loading, setLoading] = useState(true);
+
+  const [giro, setGiro] = useState(true);
  
 
   return (
     <div>
       <Overlay visible={loading}/>
-      {!welcome && <Header setAudio={setAudio} audio={audio} page={page} setListActive={setListActive} listActive={listActive}/>}
+      {!welcome && <Header setAudio={setAudio} audio={audio} page={page} setListActive={setListActive} listActive={listActive} giro={giro} setGiro={setGiro}/>}
       <Footer />
       <Blur page={page} setBlur={setWelcome} blur={welcome}>
-        <Room breakpoints={breakpoints} listActive={listActive} setLoading={setLoading} welcome={welcome}/>
+        <Room breakpoints={breakpoints} listActive={listActive} setLoading={setLoading} welcome={welcome} giro={giro} />
       </Blur>
       
       <Audio audio={audio} setAudio={setAudio} isActive={welcome}/>

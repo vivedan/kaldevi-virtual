@@ -2,8 +2,8 @@
 
 let pr1ZTMovilidad = {
     room: "ztMovilidad",
-    title: "Freedom Trax - Amodi",
-    description: "Freedom Trax es la plataforma que permite convertir una silla de ruedas manual en un TODOTERRENO con propulsión eléctrica…. Un único diseño versátil, robusto y de peso ligero, fabricado en aluminio, y que puede ser fácilmente transportado en el propio vehículo.",
+    title: "Freedom Trax",
+    description: "Freedom Trax es la plataforma de Amodi que permite convertir una silla de ruedas manual en un TODOTERRENO con propulsión eléctrica…. Un único diseño versátil, robusto y de peso ligero, fabricado en aluminio, y que puede ser fácilmente transportado en el propio vehículo.",
     storeLink: "https://kaldevi.com/wp-content/uploads/2018/07/Plataforma-Todoterreno-FREEDOM-TRAX-ilovepdf-compressed.pdf",
     srcModel: "/TV_mov_1.glb",
     images: [
@@ -41,8 +41,8 @@ let pr1ZTMovilidad = {
 
 let pr2ZTMovilidad = {
     room: "ztMovilidad",
-    title: "Silla de ruedas Sorolla - Obea",
-    description: "Silla eléctrica super-ligéra de aluminio, con baterías de lítio, y plegable para facilitar su transporte e introducción en vehículos. Con dimensiones reducidas para maniobrar en ascensores, domicilios, etc.",
+    title: "Silla de ruedas Sorolla",
+    description: "Silla eléctrica de Obea, super-ligéra de aluminio, con baterías de lítio, y plegable para facilitar su transporte e introducción en vehículos. Con dimensiones reducidas para maniobrar en ascensores, domicilios, etc.",
     storeLink: "https://obea.es/producto/silla-electrica-plegable-sorolla/",
     srcModel: "/TV_mov_2.glb",
     images: [
@@ -80,8 +80,8 @@ let pr2ZTMovilidad = {
 
 let pr3ZTMovilidad = {
     room: "ztMovilidad",
-    title: "Grúa Sunlift Mini - Sunrise",
-    description: "La grúa Sunlift Mini (130 kg) es fácil de manejar y tiene suficiente capacidad de elevación para cubrir las necesidades de cuidados en el hogar. Está diseñado para personas que necesitan un uso ligero, fácil de transportar o que tienen que moverse en poco espacio.",
+    title: "Grúa Sunlift Mini",
+    description: "La grúa Sunlift Mini (130 kg) de Sunrise es fácil de manejar y tiene suficiente capacidad de elevación para cubrir las necesidades de cuidados en el hogar. Está diseñado para personas que necesitan un uso ligero, fácil de transportar o que tienen que moverse en poco espacio.",
     storeLink: "www.google.es",
     srcModel: "/TV_mov_3.glb",
     images: [
