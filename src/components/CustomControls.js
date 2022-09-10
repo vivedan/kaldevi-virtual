@@ -19,6 +19,10 @@ function CustomControls(props) {
         }
     }, [props.target])
 
+    useEffect(()=>{
+        console.log(props)
+    }, [])
+
 
     return (
         <group>
@@ -32,7 +36,7 @@ function CustomControls(props) {
                         enableDamping
                         dampingFactor={0.08} 
                         target={ props.target }/>
-            {props.breakpoints.sm && <DeviceOrientationControls enabled={(props.projectSelected || !props.giro) ? false : true} />}
+            {props.breakpoints.sm && <DeviceOrientationControls enabled={(props.giro && (!props.projectSelected && !props.welcome)) ? true : false} />}
         </group>
     );
 }

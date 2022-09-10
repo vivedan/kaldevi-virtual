@@ -105,6 +105,13 @@ h1, h2, h3, h4{
     cursor: pointer;
 }
 
+.gyroscope{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    z-index: 1000;
+}
+
 .roomListCont{
     position: absolute;
     top: 0;

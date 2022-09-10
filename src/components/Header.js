@@ -6,13 +6,10 @@ import RoomList from './RoomList';
 
 import 'animate.css';
 
-import { useBreakpoint, BreakpointProvider } from 'gatsby-plugin-breakpoints';
+
 
 function Header(props) {
     
-
-    const breakpoints = useBreakpoint();
-
     return ( 
         <div className="headerCont animate__animated animate__fadeInDown">
             
@@ -22,10 +19,6 @@ function Header(props) {
             {!props.audio &&<svg onClick={() => props.setAudio(!props.audio)} className="generalVolume icon" xmlns="http://www.w3.org/2000/svg" width="24.608" height="18.634" viewBox="0 0 24.608 18.634">
                 <path id="Icon_awesome-volume-mute" data-name="Icon awesome-volume-mute" d="M10.335,4.842,6.059,9.159H1.153A1.159,1.159,0,0,0,0,10.323v6.988a1.159,1.159,0,0,0,1.153,1.165H6.059l4.276,4.317a1.153,1.153,0,0,0,1.969-.824V5.666A1.153,1.153,0,0,0,10.335,4.842Zm11.852,8.975L24.38,11.6a.789.789,0,0,0,0-1.107l-1.1-1.107a.77.77,0,0,0-1.1,0L19.993,11.6,17.8,9.388a.77.77,0,0,0-1.1,0l-1.1,1.107a.789.789,0,0,0,0,1.107L17.8,13.817l-2.193,2.214a.789.789,0,0,0,0,1.107l1.1,1.107a.77.77,0,0,0,1.1,0l2.193-2.214,2.194,2.215a.77.77,0,0,0,1.1,0l1.1-1.107a.789.789,0,0,0,0-1.107Z" transform="translate(0 -4.5)" fill="#fff"/>
             </svg>}
-
-            {(breakpoints.sm && props.giro) && <img id="IconGiroOn" onClick={() => props.setGiro(false)} src="/IconGiroOn_white.svg" className="icon" alt="Icon Gyroscope On" />}
-
-            {(breakpoints.sm && !props.giro) && <img id="IconGiroOff" onClick={() => props.setGiro(true)} src="/IconGiroOff_white.svg" className="icon" alt="Icon Gyroscope Off" />}
 
             <RoomList page={props.page} setListActive={props.setListActive} listActive={props.listActive} />
             
