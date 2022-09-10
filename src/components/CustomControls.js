@@ -36,7 +36,7 @@ function CustomControls(props) {
                         enableDamping
                         dampingFactor={0.08} 
                         target={ props.target }/>
-            {(props.breakpoints.sm && props.giro) && <DeviceOrientationControls enabled={props.projectSelected ? false : true} />}
+            {props.breakpoints.sm && <DeviceOrientationControls enabled={(props.projectSelected || !props.giro) ? false : true} />}
         </group>
     );
 }

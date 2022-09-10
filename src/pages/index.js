@@ -22,11 +22,11 @@ const IndexPage = () => {
 
   const [giro, setGiro] = useState(false);
 
-  useEffect(()=>{
+  /* useEffect(()=>{
     if(!welcome && breakpoints.sm) {
       setGiro(true);
     }
-  }, [welcome])
+  }, [welcome]) */
  
 
   return (
