@@ -4,7 +4,7 @@ let pr1ZTOrtopedia = {
     room: "ztOrtopedia",
     title: "Plantillas Bauerfeind",
     description: "Los pies son la base del cuerpo. Las plantillas ortopédicas descargan los pies, las articulaciones de la rodilla y de la cadera, así como la espalda. Ejercen una acción biomecánica, ayudando al pie en su funcionamiento natural. Porque cada pie tiene sus propias necesidades, Bauerfeind tiene más de 300 modelos distintos. Tenemos una plantilla adecuada para cada persona.",
-    storeLink: "www.google.es",
+    storeLink: "https://kaldevi.com",
     srcModel: "/TV_ort_1.glb",
     images: [
         {
@@ -27,19 +27,19 @@ let pr1ZTOrtopedia = {
     ],
     relatedProducts: [
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/ot1/1.png",
+            title: "Exos DJO",
+            link: "https://kaldevi.es/ferulas-3d/",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/ot3/1.jpg",
+            title: "Tobilleras Airloc",
+            link: "https://kaldevi.com",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/ot4/1.jpg",
+            title: "El soporte de mi abuelo",
+            link: "https://www.elsoportedemiabuelo.com/",
         },
     ]
 }
@@ -66,19 +66,19 @@ let pr2ZTOrtopedia = {
     ],
     relatedProducts: [
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/ot2/1.jpg",
+            title: "Plantillas Bauerfeind",
+            link: "https://kaldevi.com/",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/ot3/1.jpg",
+            title: "Tobilleras Airloc",
+            link: "https://kaldevi.com",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/ot4/1.jpg",
+            title: "El soporte de mi abuelo",
+            link: "https://www.elsoportedemiabuelo.com/",
         },
     ]
 }
@@ -87,7 +87,7 @@ let pr3ZTOrtopedia = {
     room: "ztOrtopedia",
     title: "Tobillera Airloc",
     description: "Después de una lesión grave, AirLoc, en combinación con un zapato, estabiliza el tobillo y lo protege de una nueva torcedura. Dos cubiertas de plástico acolchadas y con forma anatómica están conectadas elásticamente entre sí por debajo del talón para que la ortesis se adapte de forma óptima a la anchura del pie. Una cámara de aire hinchable en la carcasa exterior permite ajustar individualmente el AirLoc al correspondiente estado de hinchazón.",
-    storeLink: "www.google.es",
+    storeLink: "https://kaldevi.com",
     srcModel: "/TV_ort_3.glb",
     images: [
         {
@@ -111,19 +111,19 @@ let pr3ZTOrtopedia = {
     ],
     relatedProducts: [
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/ot1/1.png",
+            title: "Exos DJO",
+            link: "https://kaldevi.es/ferulas-3d/",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/ot2/1.jpg",
+            title: "Plantillas Bauerfeind",
+            link: "https://kaldevi.com/",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/ot4/1.jpg",
+            title: "El soporte de mi abuelo",
+            link: "https://www.elsoportedemiabuelo.com/",
         },
     ]
 }
@@ -161,19 +161,19 @@ let pr4ZTOrtopedia = {
     ],
     relatedProducts: [
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/ot1/1.png",
+            title: "Exos DJO",
+            link: "https://kaldevi.es/ferulas-3d/",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/ot3/1.jpg",
+            title: "Tobilleras Airloc",
+            link: "https://kaldevi.com",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/ot2/1.jpg",
+            title: "Plantillas Bauerfeind",
+            link: "https://kaldevi.com/",
         },
     ]
 }

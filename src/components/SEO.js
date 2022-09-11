@@ -24,7 +24,7 @@ export const Seo = ({ title, description, pathname, children }) => {
       <meta name="twitter:image" content={seo.image} />
       <meta name="twitter:creator" content={seo.author} />
       <link rel="icon" href="Kaldevi_Icon192.png" />
-      <link rel="manifest" href="/manifest.json"></link>
+      {/* <link rel="manifest" href="/manifest.json"></link> */}
       {children}
     </>
   )

@@ -25,13 +25,16 @@ const BienestarTecnica = () => {
 
   const [loading, setLoading] = useState(true);
 
+  const [giro, setGiro] = useState(false);
+
   return (
     <div>
       <Overlay visible={loading}/>
       {!welcome && <Header setAudio={setAudio} audio={audio} page={page} setListActive={setListActive} listActive={listActive}/>}
-      <Footer />
+      <Footer giro={giro} setGiro={setGiro}/>
       <Blur page={page} setBlur={setWelcome} blur={welcome}>
         <Room 
+          giro={giro} 
           breakpoints={breakpoints} 
           productData={productData} 
           listActive={listActive} 

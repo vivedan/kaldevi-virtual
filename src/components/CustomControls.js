@@ -9,6 +9,7 @@ function CustomControls(props) {
 
     //const breakpoints = useBreakpoint();
     const [freeze, setFreeze] = useState(false);
+    const [mobileGiro, setMobileGiro] = useState(false);
 
     useEffect(() => {
         //console.log(props.target)
@@ -19,9 +20,9 @@ function CustomControls(props) {
         }
     }, [props.target])
 
-    useEffect(()=>{
-        console.log(props)
-    }, [])
+    /* useEffect(()=>{
+        console.log((props.projectSelected || !props.giro) ? false : true)
+    }, [props.giro]) */
 
 
     return (

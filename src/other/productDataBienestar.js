@@ -30,19 +30,19 @@ let pr1ZTBienestar = {
     ],
     relatedProducts: [
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/bien2/1.jpg",
+            title: "Sillón Cocoon",
+            link: "https://kaldevi.com/producto/sillon-relax-cocoon-xxl-electrico/",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/bien3/1.jpg",
+            title: "Electroestimulador Genesy 1500",
+            link: "https://kaldevi.com/producto/aparato-electroestimulacion-genesy-3000-rehab/",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/bien4/1.jpg",
+            title: "Silla de baño Clean",
+            link: "https://kaldevi.com/producto/silla-de-ducha-clean/",
         },
     ]
 }
@@ -77,19 +77,19 @@ let pr2ZTBienestar = {
     ],
     relatedProducts: [
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/bien1/1.jpg",
+            title: "Cama ECO",
+            link: "https://kaldevi.com/producto/cama-geriatrica-geseko/",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/bien3/1.jpg",
+            title: "Electroestimulador Genesy 1500",
+            link: "https://kaldevi.com/producto/aparato-electroestimulacion-genesy-3000-rehab/",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/bien4/1.jpg",
+            title: "Silla de baño Clean",
+            link: "https://kaldevi.com/producto/silla-de-ducha-clean/",
         },
     ]
 }
@@ -125,19 +125,19 @@ let pr3ZTBienestar = {
     ],
     relatedProducts: [
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/bien2/1.jpg",
+            title: "Sillón Cocoon",
+            link: "https://kaldevi.com/producto/sillon-relax-cocoon-xxl-electrico/",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/bien1/1.jpg",
+            title: "Cama ECO",
+            link: "https://kaldevi.com/producto/cama-geriatrica-geseko/",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/bien4/1.jpg",
+            title: "Silla de baño Clean",
+            link: "https://kaldevi.com/producto/silla-de-ducha-clean/",
         },
     ]
 }
@@ -173,19 +173,19 @@ let pr4ZTBienestar = {
     ],
     relatedProducts: [
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/bien2/1.jpg",
+            title: "Sillón Cocoon",
+            link: "https://kaldevi.com/producto/sillon-relax-cocoon-xxl-electrico/",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/bien3/1.jpg",
+            title: "Electroestimulador Genesy 1500",
+            link: "https://kaldevi.com/producto/aparato-electroestimulacion-genesy-3000-rehab/",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/bien1/1.jpg",
+            title: "Cama ECO",
+            link: "https://kaldevi.com/producto/cama-geriatrica-geseko/",
         },
     ]
 }

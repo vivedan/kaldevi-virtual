@@ -22,19 +22,19 @@ let pr1ZTMovilidad = {
     ],
     relatedProducts: [
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/mov2/1.jpg",
+            title: "Silla de ruedas Sorolla",
+            link: "https://obea.es/producto/silla-electrica-plegable-sorolla/",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/mov3/1.jpg",
+            title: "Grúa Sunlift Mini",
+            link: "https://kaldevi.com",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/mov4/1.jpg",
+            title: "Andador deambulador Sucesores",
+            link: "https://kaldevi.com",
         },
     ]
 }
@@ -61,19 +61,19 @@ let pr2ZTMovilidad = {
     ],
     relatedProducts: [
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/mov1/1.jpg",
+            title: "Freedom Trax",
+            link: "https://kaldevi.com",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/mov3/1.jpg",
+            title: "Grúa Sunlift Mini",
+            link: "https://kaldevi.com",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/mov4/1.jpg",
+            title: "Andador deambulador Sucesores",
+            link: "https://kaldevi.com",
         },
     ]
 }
@@ -82,7 +82,7 @@ let pr3ZTMovilidad = {
     room: "ztMovilidad",
     title: "Grúa Sunlift Mini",
     description: "La grúa Sunlift Mini (130 kg) de Sunrise es fácil de manejar y tiene suficiente capacidad de elevación para cubrir las necesidades de cuidados en el hogar. Está diseñado para personas que necesitan un uso ligero, fácil de transportar o que tienen que moverse en poco espacio.",
-    storeLink: "www.google.es",
+    storeLink: "https://kaldevi.com",
     srcModel: "/TV_mov_3.glb",
     images: [
         {
@@ -106,19 +106,19 @@ let pr3ZTMovilidad = {
     ],
     relatedProducts: [
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/mov2/1.jpg",
+            title: "Silla de ruedas Sorolla",
+            link: "https://obea.es/producto/silla-electrica-plegable-sorolla/",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/mov1/1.jpg",
+            title: "Freedom Trax",
+            link: "https://kaldevi.com",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/mov4/1.jpg",
+            title: "Andador deambulador Sucesores",
+            link: "https://kaldevi.com",
         },
     ]
 }
@@ -142,19 +142,19 @@ let pr4ZTMovilidad = {
     ],
     relatedProducts: [
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/mov2/1.jpg",
+            title: "Silla de ruedas Sorolla",
+            link: "https://obea.es/producto/silla-electrica-plegable-sorolla/",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/mov3/1.jpg",
+            title: "Grúa Sunlift Mini",
+            link: "https://kaldevi.com",
         },
         {
-            src: "",
-            title: "",
-            link: "",
+            src: "/mov1/1.jpg",
+            title: "Freedom Trax",
+            link: "https://kaldevi.com",
         },
     ]
 }

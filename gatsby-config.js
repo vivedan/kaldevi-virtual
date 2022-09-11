@@ -17,6 +17,38 @@ module.exports = {
               },
             },
           },
+          {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+              name: `Kaldevi Showroom Virtual`,
+              short_name: `Kaldevi`,
+              start_url: `/`,
+              background_color: `#416383`,
+              theme_color: `#416383`,
+              display: `fullscreen`,
+              icons: [
+                {
+                  src: `src/images/Kaldevi_Icon192.png`,
+                  sizes: `192x192`,
+                  type: `image/png`,
+                },
+                {
+                  src: `src/images/Kaldevi_Icon512.png`,
+                  sizes: `512x512`,
+                  type: `image/png`,
+                },
+              ],
+              description: `Showroom virtual de la empresa valenciana Kaldevi, con zonas de especialización orientadas a la ortopedia técnica, el bienestar y la movilidad.`,
+            },
+          },
+          {
+            resolve: 'gatsby-plugin-offline',
+            options: {
+               workboxConfig: {
+                  globPatterns: ['**/*']
+               }
+            }
+         },
         'gatsby-plugin-breakpoints',
     ]
 }
