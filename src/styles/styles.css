@@ -311,6 +311,10 @@ h1, h2, h3, h4{
     cursor: pointer;
 }
 
+.titleRelated{
+    text-align: center;
+}
+
 .imageInfoCont{
     position: absolute;
     width: 45vw;

@@ -4,12 +4,32 @@ import '../styles/styles.css';
 
 import 'animate.css';
 
+function RelatedProducts(props) {
+    const {src, link, title} = props.product;
+    const [hovered, setHovered] = useState(false);
+
+    const divStyle = {
+        color: '#416383',
+        backgroundImage: 'url(' + src + ')',
+        backgroundSize: 'cover',
+    }
+
+    return(
+        
+        <div className="imgRelated" style={divStyle} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+            <a href={link} target="_blank">
+                {hovered && <h3 className="titleRelated">{title}</h3>}
+            </a>
+        </div>
+    )
+}
+
 function ProductInfo(props) {
 
     const {title, description, storeLink, images, relatedProducts} = props.projectSelected;
 
 
-    //console.log(props.projectSelected.title);
+    console.log(props.projectSelected.relatedProducts);
 
     return ( 
         <div>
@@ -46,9 +66,10 @@ function ProductInfo(props) {
                 <div className="relatedCont">
                     <h4>Productos relacionados</h4>
                     <div className="imgRelatedCont">
+                        {/* <div className="imgRelated"></div>
                         <div className="imgRelated"></div>
-                        <div className="imgRelated"></div>
-                        <div className="imgRelated"></div>
+                        <div className="imgRelated"></div> */}
+                        {relatedProducts && relatedProducts.map((product) => <RelatedProducts product={product} key={Math.random()} /> )}
                     </div>
                 </div>
             </div>

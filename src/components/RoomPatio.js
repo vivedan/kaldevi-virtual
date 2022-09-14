@@ -20,6 +20,9 @@ import patioData from '../other/patioData';
 import AudioClick from './AudioClick';
 import CustomControls from './CustomControls';
 
+import Comment from './Comment';
+import commentsPatioData from '../other/commentsPatioData';
+
 function Room(props) {
 
     /* const [projectSelected, setProjectSelected] = useState(false);
@@ -76,7 +79,7 @@ function Room(props) {
                                 projectSelected={projectSelected}
                                 setImageSelected={setImageSelected}
                                 /> */}
-                            <group rotation={[0, THREE.MathUtils.degToRad(90), 0]}>
+                        <group rotation={[0, THREE.MathUtils.degToRad(90), 0]}>
                             <Dome panorama={'/pano_patio.jpg'}/>
                             
                             <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[35, 0, 0]} dir={"Ortopedia\nZona Técnica"} textpos={"right"} rotation={[0, -Math.PI/2, 0]} scale={4} to={"/ortopedia-tecnica"}/>
@@ -114,7 +117,26 @@ function Room(props) {
                                 data={patioData}
                                 setClicked={setClicked}
                                 setImageSelected={setImageSelected}/>
+
+                            <group>
+                                <Comment 
+                                    position={[55, -20, -20]} 
+                                    rotation={[0, THREE.MathUtils.degToRad(0), 0]} 
+                                    scale={5} 
+                                    lineHeight={100} 
+                                    color={"white"}
+                                    text={commentsPatioData[0]}
+                                    />
+                                <Comment 
+                                    position={[55, -20, 30]} 
+                                    rotation={[0, THREE.MathUtils.degToRad(0), 0]} 
+                                    scale={5} 
+                                    lineHeight={100} 
+                                    color={"white"}
+                                    text={commentsPatioData[1]}
+                                    />
                             </group>
+                        </group>
                     </Suspense>
                     
                 </Canvas>

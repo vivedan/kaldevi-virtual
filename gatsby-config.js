@@ -1,5 +1,12 @@
 require("dotenv").config()
 
+const myCustomQueries = {
+  xs: '(max-width: 320px)',
+  sm: '(max-width: 926px)',
+  md: '(max-width: 1024px)',
+  l: '(max-width: 1536px)',
+};
+
 module.exports = {
     siteMetadata: {
       title: `Kaldevi Showroom Virtual`,
@@ -18,6 +25,12 @@ module.exports = {
             },
           },
           {
+            resolve: "gatsby-plugin-breakpoints",
+            options: {
+                queries: myCustomQueries,
+            },
+          },
+          {
             resolve: `gatsby-plugin-manifest`,
             options: {
               name: `Kaldevi Showroom Virtual`,
@@ -26,6 +39,7 @@ module.exports = {
               background_color: `#416383`,
               theme_color: `#416383`,
               display: `fullscreen`,
+              orientation: `landscape`,
               icons: [
                 {
                   src: `src/images/Kaldevi_Icon192.png`,
@@ -45,7 +59,8 @@ module.exports = {
             resolve: 'gatsby-plugin-offline',
             options: {
                workboxConfig: {
-                  globPatterns: ['**/*']
+                  globPatterns: ['**/*'],
+                  maximumFileSizeToCacheInBytes: 12000000,
                }
             }
          },
