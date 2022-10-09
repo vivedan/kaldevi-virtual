@@ -36,7 +36,7 @@ const IndexPage = () => {
       <Footer  giro={giro} setGiro={setGiro}/> */}
       {/* <Blur page={page} setBlur={setWelcome} blur={welcome}> */}
         <div className="overlayLanding">
-          <img className="logoLanding" src="/Kaldevi_logo_yellow.png" />
+          <img className="logoLanding" src="Kaldevi_logo_yellow.png" />
           <h1 className="landingTitle">Showroom Virtual</h1>
           <h2 className="landingSubtitle">Próximamente</h2>
         </div>
