@@ -557,7 +557,37 @@ h1, h2, h3, h4{
     --animate-duration: 4s;
 }
 
+.overlayLanding{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.logoLanding{
+    height: 40%;
+    width: auto;
+    opacity: 0.95;
+}
+
+.landingTitle{
+    font-size: 45px;
+    letter-spacing: 0.1em;
+    color: orange;
+}
+
+.landingSubtitle{
+    color: yellow;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    margin: 0px;
+    padding-top: 0px;
+}
 
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */

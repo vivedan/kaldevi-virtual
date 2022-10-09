@@ -1,5 +1,5 @@
 import React, { Component, Suspense, useState, useEffect, useRef } from 'react';
-import Room from '../components/RoomLanding';
+import Room from '../components/RoomEntry';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Blur from '../components/Blur';
@@ -31,19 +31,14 @@ const IndexPage = () => {
 
   return (
     <div>
-      {/* <Overlay visible={loading}/>
+      <Overlay visible={loading}/>
       {!welcome && <Header setAudio={setAudio} audio={audio} page={page} setListActive={setListActive} listActive={listActive} />}
-      <Footer  giro={giro} setGiro={setGiro}/> */}
-      {/* <Blur page={page} setBlur={setWelcome} blur={welcome}> */}
-        <div className="overlayLanding">
-          <img className="logoLanding" src="/Kaldevi_logo_yellow.png" />
-          <h1 className="landingTitle">Showroom Virtual</h1>
-          <h2 className="landingSubtitle">Próximamente</h2>
-        </div>
+      <Footer  giro={giro} setGiro={setGiro}/>
+      <Blur page={page} setBlur={setWelcome} blur={welcome}>
         <Room breakpoints={breakpoints} listActive={listActive} setLoading={setLoading} welcome={welcome} giro={giro} />
-      {/* </Blur> */}
+      </Blur>
       
-      {/* <Audio audio={audio} setAudio={setAudio} isActive={welcome}/> */}
+      <Audio audio={audio} setAudio={setAudio} isActive={welcome}/>
 
     </div>
   )
