@@ -19,7 +19,7 @@ import Image from './Image';
 import Video from './Video';
 import Overlay from './Overlay';
 import AudioClick from './AudioClick';
-import CustomControls from './CustomControls';
+import CustomControls from './CustomControlsLanding';
 
 function Room(props) {
 
@@ -58,6 +58,8 @@ function Room(props) {
             setBlur(true)
         }
     }, [clicked])
+
+    
 
     return ( 
         <div className="main-cont">
