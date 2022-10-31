@@ -101,18 +101,36 @@ function Room(props) {
                                 {props.children}
                                 {(overlay || clicked) && <group>
                                     <Comment 
-                                        position={[55, -10, -30]} 
+                                        position={[55, -10, -70]} 
                                         rotation={[0, THREE.MathUtils.degToRad(0), 0]} 
                                         scale={5} 
-                                        lineHeight={100} 
-                                        text={"Desde que me hicieron las plantillas en Kaldevi..."}
+                                        lineHeight={100}
+                                        color={props.commentColor} 
+                                        text={props.comments[0]}
                                         />
                                     <Comment 
                                         position={[55, 0, 10]} 
                                         rotation={[0, THREE.MathUtils.degToRad(0), 0]} 
                                         scale={5} 
                                         lineHeight={100} 
-                                        text={"El equipo de la ortopedia en Kaldevi es de 10."}
+                                        color={props.commentColor} 
+                                        text={props.comments[1]}
+                                        />
+                                    <Comment 
+                                        position={[-5, 0, -40]} 
+                                        rotation={[0, THREE.MathUtils.degToRad(0), 0]} 
+                                        scale={10} 
+                                        lineHeight={250} 
+                                        color={props.commentColor} 
+                                        text={props.comments[2]}
+                                        />
+                                    <Comment 
+                                        position={[20, -10, 10]} 
+                                        rotation={[0, THREE.MathUtils.degToRad(0), 0]} 
+                                        scale={5} 
+                                        lineHeight={100} 
+                                        color={props.commentColor} 
+                                        text={props.comments[3]}
                                         />
                                 </group>}
                             </group>

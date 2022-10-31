@@ -11,7 +11,9 @@ import Overlay from '../components/LoaderOverlay';
 
 import * as THREE from 'three';
 import Arrow from '../components/Arrow';
-import { Seo } from "../components/SEO"
+import { Seo } from "../components/SEO";
+
+import commentsData from '../other/commentsBienestarData';
 
 const IndexPage = () => {
   const page = "Bienestar - Galería";
@@ -39,7 +41,9 @@ const IndexPage = () => {
           panorama={'/pano_art2.jpg'}
           panoramaB={'/pano_art2_b.jpg'}
           detectorPosition={[85, -4, -25]}
-          detectorRotation={[0, THREE.MathUtils.degToRad(-90), THREE.MathUtils.degToRad(-10)]}>
+          detectorRotation={[0, THREE.MathUtils.degToRad(-90), THREE.MathUtils.degToRad(-10)]}
+          comments={commentsData}
+          commentColor={"yellow"}>
           <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[35, 0, -45]} dir={"Bienestar\nZona Técnica"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(-70), 0]} scale={5} to={"/bienestar-tecnica"}/>
           <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[35, -17, -25]} dir={"Movilidad\nGaleria"} textpos={"left"} rotation={[0, THREE.MathUtils.degToRad(-70), -Math.PI/2]} scale={5} to={"/movilidad-galeria"}/>
           <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[-35, -6, -8]} dir={"Ortopedia\nGaleria"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(55), -Math.PI/2]} scale={5} to={"/ortopedia-galeria"}/>

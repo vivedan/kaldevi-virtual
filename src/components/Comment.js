@@ -9,7 +9,7 @@ function Comment(props) {
             {props.helper && <Plane></Plane>}
             <Html>
                 <div className="animate__animated animate__fadeIn">
-                    <h3 className="commentGaleria" style={{fontWeight: "400", width: "300px", color: props.color, whiteSpace: "break-spaces",}}>{props.text}</h3>
+                    <h3 className="commentGaleria" style={{fontWeight: "600", width: "300px", color: props.color, whiteSpace: "break-spaces",}}>{props.text}</h3>
                     <div className="lineCommentGaleria" style={{height: props.lineHeight + "px", width: "3px", background: props.color}}></div>
                 </div>
             </Html>

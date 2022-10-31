@@ -32,8 +32,8 @@ let pr1ZTOrtopedia = {
             link: "https://kaldevi.es/ferulas-3d/",
         },
         {
-            src: "/ot3/1.jpg",
-            title: "Tobilleras Airloc",
+            src: "/related/ot1_2.jpg",
+            title: "Cojín antiescara Alova",
             link: "https://kaldevi.com",
         },
         {
@@ -76,9 +76,9 @@ let pr2ZTOrtopedia = {
             link: "https://kaldevi.com",
         },
         {
-            src: "/ot4/1.jpg",
-            title: "El soporte de mi abuelo",
-            link: "https://www.elsoportedemiabuelo.com/",
+            src: "/related/ot2_3.jpg",
+            title: "Taco Abductor UBIO",
+            link: "https://kaldevi.com",
         },
     ]
 }
@@ -121,9 +121,9 @@ let pr3ZTOrtopedia = {
             link: "https://kaldevi.com/",
         },
         {
-            src: "/ot4/1.jpg",
-            title: "El soporte de mi abuelo",
-            link: "https://www.elsoportedemiabuelo.com/",
+            src: "/related/ot3_3.jpg",
+            title: "Cojin Viscoelastico Orliman",
+            link: "https://kaldevi.com/",
         },
     ]
 }
@@ -166,13 +166,13 @@ let pr4ZTOrtopedia = {
             link: "https://kaldevi.es/ferulas-3d/",
         },
         {
-            src: "/ot3/1.jpg",
-            title: "Tobilleras Airloc",
+            src: "/related/ot4_2.jpg",
+            title: "Cojín herradura Orliman",
             link: "https://kaldevi.com",
         },
         {
-            src: "/ot2/1.jpg",
-            title: "Plantillas Bauerfeind",
+            src: "/related/ot4_3.jpg",
+            title: "C8 Adas",
             link: "https://kaldevi.com/",
         },
     ]

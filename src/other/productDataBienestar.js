@@ -30,19 +30,19 @@ let pr1ZTBienestar = {
     ],
     relatedProducts: [
         {
-            src: "/bien2/1.jpg",
-            title: "Sillón Cocoon",
-            link: "https://kaldevi.com/producto/sillon-relax-cocoon-xxl-electrico/",
+            src: "/related/bien1_1.jpg",
+            title: "Cama FORMIDABLE",
+            link: "https://kaldevi.com/producto/cama-geriatrica-formidabel/",
         },
         {
-            src: "/bien3/1.jpg",
-            title: "Electroestimulador Genesy 1500",
-            link: "https://kaldevi.com/producto/aparato-electroestimulacion-genesy-3000-rehab/",
+            src: "/related/bien1_2.jpg",
+            title: "Cama BERIT",
+            link: "https://ortopedia.kaldevi.com/producto/cama-geriatrica-berit/",
         },
         {
-            src: "/bien4/1.jpg",
-            title: "Silla de baño Clean",
-            link: "https://kaldevi.com/producto/silla-de-ducha-clean/",
+            src: "/related/bien1_3.jpg",
+            title: "Cama GESEKO",
+            link: "https://ortopedia.kaldevi.com/producto/cama-geriatrica-geseko/",
         },
     ]
 }
@@ -77,19 +77,19 @@ let pr2ZTBienestar = {
     ],
     relatedProducts: [
         {
-            src: "/bien1/1.jpg",
-            title: "Cama ECO",
-            link: "https://kaldevi.com/producto/cama-geriatrica-geseko/",
+            src: "/related/bien2_1.jpg",
+            title: "Sillón Elisabeth",
+            link: "https://kaldevi.com/producto/butaca-descanso-elisabeth/",
         },
         {
-            src: "/bien3/1.jpg",
-            title: "Electroestimulador Genesy 1500",
-            link: "https://kaldevi.com/producto/aparato-electroestimulacion-genesy-3000-rehab/",
+            src: "/related/bien2_2.jpg",
+            title: "Sillón Elysee",
+            link: "https://kaldevi.com/producto/sillon-relax-elysee/",
         },
         {
-            src: "/bien4/1.jpg",
-            title: "Silla de baño Clean",
-            link: "https://kaldevi.com/producto/silla-de-ducha-clean/",
+            src: "/related/bien2_3.jpg",
+            title: "Balance Totalcare",
+            link: "https://ortopedia.kaldevi.com/producto/silla-de-ruedas-basculante-balance/",
         },
     ]
 }
@@ -125,19 +125,19 @@ let pr3ZTBienestar = {
     ],
     relatedProducts: [
         {
-            src: "/bien2/1.jpg",
-            title: "Sillón Cocoon",
-            link: "https://kaldevi.com/producto/sillon-relax-cocoon-xxl-electrico/",
+            src: "/related/bien3_1.jpg",
+            title: "Magnetoterapia Globus",
+            link: "https://kaldevi.com/",
         },
         {
-            src: "/bien1/1.jpg",
-            title: "Cama ECO",
-            link: "https://kaldevi.com/producto/cama-geriatrica-geseko/",
+            src: "/related/bien3_2.jpg",
+            title: "Bandas elásticas",
+            link: "https://kaldevi.com/",
         },
         {
-            src: "/bien4/1.jpg",
-            title: "Silla de baño Clean",
-            link: "https://kaldevi.com/producto/silla-de-ducha-clean/",
+            src: "/related/bien3_3.jpg",
+            title: "Pedallier",
+            link: "https://kaldevi.com/",
         },
     ]
 }
@@ -173,19 +173,19 @@ let pr4ZTBienestar = {
     ],
     relatedProducts: [
         {
-            src: "/bien2/1.jpg",
-            title: "Sillón Cocoon",
-            link: "https://kaldevi.com/producto/sillon-relax-cocoon-xxl-electrico/",
+            src: "/related/bien4_1.jpg",
+            title: "Asidero",
+            link: "https://kaldevi.com/asideros/",
         },
         {
-            src: "/bien3/1.jpg",
-            title: "Electroestimulador Genesy 1500",
-            link: "https://kaldevi.com/producto/aparato-electroestimulacion-genesy-3000-rehab/",
+            src: "/related/bien4_2.jpg",
+            title: "Alza",
+            link: "https://kaldevi.com/",
         },
         {
-            src: "/bien1/1.jpg",
-            title: "Cama ECO",
-            link: "https://kaldevi.com/producto/cama-geriatrica-geseko/",
+            src: "/related/bien4_3.jpg",
+            title: "Taburete",
+            link: "https://kaldevi.com/",
         },
     ]
 }

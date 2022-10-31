@@ -13,6 +13,8 @@ import * as THREE from 'three';
 import Arrow from '../components/Arrow';
 import { Seo } from "../components/SEO"
 
+import commentsData from '../other/commentsOrtopediaData';
+
 const IndexPage = () => {
   const page = "Ortopedia - Galería";
   const [welcome, setWelcome] = useState(true);
@@ -39,7 +41,9 @@ const IndexPage = () => {
           panorama={'/pano_art1.jpg'}
           panoramaB={'/pano_art1_b.jpg'}
           detectorPosition={[85, 10, -12]}
-          detectorRotation={[0, THREE.MathUtils.degToRad(-90), THREE.MathUtils.degToRad(-15)]}>
+          detectorRotation={[0, THREE.MathUtils.degToRad(-90), THREE.MathUtils.degToRad(-15)]}
+          comments={commentsData}
+          commentColor={"black"}>
             <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[35, 0, -20]} dir={"Ortopedia\nZona Técnica"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(-90), 0]} scale={4} to={"/ortopedia-tecnica"}/>
             <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[35, -7, -16]} dir={"Bienestar\nGaleria"} textpos={"left"} rotation={[0, THREE.MathUtils.degToRad(-90), -Math.PI/2]} scale={4} to={"/bienestar-galeria"}/>
             <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[-15, -7, -40]} dir={"Entrada"} textpos={"left"} rotation={[0, THREE.MathUtils.degToRad(45), Math.PI]} scale={5} to={"/"}/>
