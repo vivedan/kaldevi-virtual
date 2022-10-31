@@ -47,13 +47,13 @@ h1, h2, h3, h4{
 
 .rareaFooter{
     position: absolute;
-    left: -10px;
+    left: 10px;
     /* top: 50%;
     transform: translate(0%, -50%); */
     bottom: 10px;
     width: 100px;
-    height: 100px;
-    background-image: url('/rarea_mark.png');
+    height: 38px;
+    background-image: url('/rarea_mark2.png');
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -694,7 +694,8 @@ h1, h2, h3, h4{
 
     .rareaFooter{
         width: 80px;
-        height: 80px;
+        height: 30px;
+        bottom: 25px;
     }
 
     .arrowDown{
@@ -783,7 +784,8 @@ h1, h2, h3, h4{
 	
     .rareaFooter{
         width: 80px;
-        height: 80px;
+        height: 30px;
+        bottom: 25px;
     }
 
     .arrowDown{
