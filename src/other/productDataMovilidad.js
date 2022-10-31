@@ -118,7 +118,7 @@ let pr3ZTMovilidad = {
         {
             src: "/related/mov3_3.jpg",
             title: "Arnés Amputados",
-            link: "https://kaldevi.com",
+            link: "https://ortopedia.kaldevi.com/producto/arnes-amputados/",
         },
     ]
 }

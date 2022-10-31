@@ -51,7 +51,7 @@ let pr2ZTBienestar = {
     room: "ztBienestar",
     title: "Sillón Cocoon",
     description: "El sillón COCOON de Innovsa es muy cómodo y de múltiples posiciones. Se puede usar tanto en el hogar como en los centros sociosanitarios, debido a su revestimiento, fácil de limpiar.",
-    storeLink: "https://kaldevi.com/producto/sillon-relax-cocoon-xxl-electrico/",
+    storeLink: "https://ortopedia.kaldevi.com/producto/sillon-relax-cocoon/",
     srcModel: "/TV_bien_2.glb",
     images: [
         {
@@ -84,7 +84,7 @@ let pr2ZTBienestar = {
         {
             src: "/related/bien2_2.jpg",
             title: "Sillón Elysee",
-            link: "https://kaldevi.com/producto/sillon-relax-elysee/",
+            link: "https://ortopedia.kaldevi.com/producto/sillon-relax-elysee/",
         },
         {
             src: "/related/bien2_3.jpg",

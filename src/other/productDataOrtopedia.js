@@ -34,7 +34,7 @@ let pr1ZTOrtopedia = {
         {
             src: "/related/ot1_2.jpg",
             title: "Cojín antiescara Alova",
-            link: "https://kaldevi.com",
+            link: "https://ortopedia.kaldevi.com/producto/cojin-antiescaras-alova/",
         },
         {
             src: "/ot4/1.jpg",
@@ -78,7 +78,7 @@ let pr2ZTOrtopedia = {
         {
             src: "/related/ot2_3.jpg",
             title: "Taco Abductor UBIO",
-            link: "https://kaldevi.com",
+            link: "https://ortopedia.kaldevi.com/producto/cojin-antiescaras-ergoplus-taco-abductor/",
         },
     ]
 }
@@ -123,7 +123,7 @@ let pr3ZTOrtopedia = {
         {
             src: "/related/ot3_3.jpg",
             title: "Cojin Viscoelastico Orliman",
-            link: "https://kaldevi.com/",
+            link: "https://ortopedia.kaldevi.com/producto/cojin-antiescaras-viscoelastico-cuadrado-con-memoria/",
         },
     ]
 }
@@ -161,19 +161,19 @@ let pr4ZTOrtopedia = {
     ],
     relatedProducts: [
         {
-            src: "/ot1/1.png",
-            title: "Exos DJO",
-            link: "https://kaldevi.es/ferulas-3d/",
+            src: "/ot2/1.jpg",
+            title: "Plantillas Bauerfeind",
+            link: "https://kaldevi.es/",
         },
         {
             src: "/related/ot4_2.jpg",
             title: "Cojín herradura Orliman",
-            link: "https://kaldevi.com",
+            link: "https://ortopedia.kaldevi.com/producto/cojin-antiescaras-viscoelastico-herradura/",
         },
         {
             src: "/related/ot4_3.jpg",
             title: "C8 Adas",
-            link: "https://kaldevi.com/",
+            link: "https://ortopedia.kaldevi.com/producto/cojin-antiescaras-viscoelastico-postural-c8/",
         },
     ]
 }
