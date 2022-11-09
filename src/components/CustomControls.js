@@ -45,8 +45,19 @@ function CustomControls(props) {
                             props.setGiro(false);
                         }
                     }else{
-                        setMobileGiro(true);
-                        props.setGiro(true);
+                        if (typeof DeviceMotionEvent.requestPermission === 'function') {
+                            DeviceMotionEvent.requestPermission().then(response => {
+                                if (response == 'granted') {
+                                    console.log("accelerometer permission granted");
+                                    // Do stuff here
+                                    setMobileGiro(true);
+                                    props.setGiro(true);
+                                }
+                            });
+                        }else{
+                            setMobileGiro(true);
+                            props.setGiro(true);
+                        }
                     }
                 }
             }
