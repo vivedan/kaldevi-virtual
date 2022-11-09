@@ -85,10 +85,12 @@ function CustomControls(props) {
     }, [])
 
     useEffect(() => {
-        if(mobileGiro){
-            gyroRef.current.connect();
-        }else{
-            gyroRef.current.disconnect();
+        if(props.breakpoints.sm){
+            if(mobileGiro){
+                gyroRef.current.connect();
+            }else{
+                gyroRef.current.disconnect();
+            }
         }
     }, [mobileGiro])
 
