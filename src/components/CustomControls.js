@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { Component, useEffect, useState, useRef } from 'react';
 import { DeviceOrientationControls, OrbitControls } from '@react-three/drei';
 //import { useBreakpoint, BreakpointProvider } from 'gatsby-plugin-breakpoints';
 
@@ -10,6 +10,8 @@ function CustomControls(props) {
     //const breakpoints = useBreakpoint();
     const [freeze, setFreeze] = useState(false);
     const [mobileGiro, setMobileGiro] = useState(false);
+
+    const gyroRef = useRef();
 
     useEffect(() => {
         //console.log(props.target)
@@ -59,12 +61,22 @@ function CustomControls(props) {
         }
     }, [props.giro])
 
-    /* useEffect(() => {
-        if(window.history.state){
+    useEffect(() => {
+        /* if(window.history.state){
             console.log(window.history.state.giro);
-        }
+        } */
+        gyroRef.current.disconnect();
+        //console.log(gyroRef.current);
         
-    }, []) */
+    }, [])
+
+    useEffect(() => {
+        if(mobileGiro){
+            gyroRef.current.connect();
+        }else{
+            gyroRef.current.disconnect();
+        }
+    }, [mobileGiro])
 
 
     return (
@@ -80,6 +92,7 @@ function CustomControls(props) {
                         dampingFactor={0.08} 
                         target={ props.target }/>
             {/* {mobileGiro && <DeviceOrientationControls />} */}
+            {props.breakpoints.sm && <DeviceOrientationControls ref={gyroRef}/>}
         </group>
     );
 }
