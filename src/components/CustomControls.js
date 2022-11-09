@@ -79,7 +79,7 @@ function CustomControls(props) {
                         enableDamping
                         dampingFactor={0.08} 
                         target={ props.target }/>
-            {mobileGiro && <DeviceOrientationControls />}
+            {/* {mobileGiro && <DeviceOrientationControls />} */}
         </group>
     );
 }
