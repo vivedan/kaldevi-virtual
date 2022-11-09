@@ -7,14 +7,29 @@ import { useBreakpoint, BreakpointProvider } from 'gatsby-plugin-breakpoints';
 
 function Footer(props) {
     const breakpoints = useBreakpoint();
+
+    function handleClick(state){
+        if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+            DeviceOrientationEvent.requestPermission().then(response => {
+                if (response == 'granted') {
+                    console.log("accelerometer permission granted");
+                    // Do stuff here
+                    props.setGiro(state ? true : false);
+                }
+            });
+        }else{
+            props.setGiro(state ? true : false);
+        }
+    }
+
     return ( 
         <div className="footerCont animate__animated animate__fadeInUp">
             <a href="https://rareastudio.com/" target="_blank" className="rareaFooter"></a>
             <a href="https://ortopedia.kaldevi.com/" target="_blank" className="kaldeviFooter"></a>
 
-            {(breakpoints.sm && props.giro) && <img id="IconGiroOn" onClick={() => props.setGiro(false)} src="/IconGiroOn_white.svg" className="gyroscope icon" alt="Icon Gyroscope On" />}
+            {(breakpoints.sm && props.giro) && <img id="IconGiroOn" onClick={() => handleClick(false)} src="/IconGiroOn_white.svg" className="gyroscope icon" alt="Icon Gyroscope On" />}
 
-            {(breakpoints.sm && !props.giro) && <img id="IconGiroOff" onClick={() => props.setGiro(true)} src="/IconGiroOff_white.svg" className="gyroscope icon" alt="Icon Gyroscope Off" />}
+            {(breakpoints.sm && !props.giro) && <img id="IconGiroOff" onClick={() => handleClick(true)} src="/IconGiroOff_white.svg" className="gyroscope icon" alt="Icon Gyroscope Off" />}
 
 
             {/* <svg className="fingerIcon animate__animated animate__wobble animate__infinite" xmlns="http://www.w3.org/2000/svg" width="38.25" height="54.5" viewBox="0 0 38.25 54.5">
