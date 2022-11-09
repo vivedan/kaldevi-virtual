@@ -76,7 +76,10 @@ function CustomControls(props) {
         /* if(window.history.state){
             console.log(window.history.state.giro);
         } */
-        gyroRef.current.disconnect();
+        if(props.breakpoints.sm){
+            gyroRef.current.disconnect();
+        }
+        
         //console.log(gyroRef.current);
         
     }, [])
