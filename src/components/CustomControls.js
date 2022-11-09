@@ -25,6 +25,48 @@ function CustomControls(props) {
     }, [props.giro]) */
 
 
+    useEffect(() => {
+        if(props.autoRotate){
+            //console.log('past overlay');
+            /* setMobileGiro(props.breakpoints.sm ? true : false);
+            props.setGiro(props.breakpoints.sm ? true : false); */
+            // Wrap the require in check for window
+            if (typeof window !== `undefined`) {
+                //previously below if was checking props.breakpoints.sm
+                if(props.breakpoints.sm){
+                    if(window.history.state){
+                        if(window.history.state.giro){
+                            setMobileGiro(true);
+                            props.setGiro(true);
+                        }else{
+                            setMobileGiro(false);
+                            props.setGiro(false);
+                        }
+                    }else{
+                        setMobileGiro(true);
+                        props.setGiro(true);
+                    }
+                }
+            }
+        }
+    }, [props.autoRotate])
+
+    useEffect(() => {
+        if(props.giro){
+            setMobileGiro(true)
+        }else{
+            setMobileGiro(false)
+        }
+    }, [props.giro])
+
+    /* useEffect(() => {
+        if(window.history.state){
+            console.log(window.history.state.giro);
+        }
+        
+    }, []) */
+
+
     return (
         <group>
             <OrbitControls 
@@ -37,7 +79,7 @@ function CustomControls(props) {
                         enableDamping
                         dampingFactor={0.08} 
                         target={ props.target }/>
-            {/* {props.breakpoints.sm && <DeviceOrientationControls enabled={(props.projectSelected || !props.giro) ? false : true} />} */}
+            {mobileGiro && <DeviceOrientationControls />}
         </group>
     );
 }

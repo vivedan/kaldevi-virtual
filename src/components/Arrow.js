@@ -50,7 +50,7 @@ function Arrow(props) {
         setAudio(true);
         props.setLoading(true);
         setTimeout(()=>{
-            navigate(props.to)
+            navigate(props.to, {state: { giro: props.giro }})
         }, 1000)
         
     }

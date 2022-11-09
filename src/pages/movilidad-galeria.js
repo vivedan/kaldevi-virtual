@@ -33,6 +33,7 @@ const IndexPage = () => {
       <Blur page={page} setBlur={setWelcome} blur={welcome}>
         <Room 
           giro={giro}
+          setGiro={setGiro}
           breakpoints={breakpoints} 
           listActive={listActive} 
           setLoading={setLoading} 
@@ -43,9 +44,9 @@ const IndexPage = () => {
           detectorRotation={[0, THREE.MathUtils.degToRad(-90), THREE.MathUtils.degToRad(10)]}
           comments={commentsData}
           commentColor={"black"}>
-          <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[35, 0, 40]} dir={"Movilidad\nZona Técnica"} textpos={"left"} rotation={[0, THREE.MathUtils.degToRad(-110), Math.PI]} scale={5} to={"/movilidad-tecnica"}/>
-          <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[35, -13, 20]} dir={"Bienestar\nGaleria"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(-100), -Math.PI/2]} scale={5} to={"/bienestar-galeria"}/>
-          <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[-35, -7, 5]} dir={"Entrada"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(65), 0]} scale={5} to={"/"}/>
+          <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[35, 0, 40]} dir={"Movilidad\nZona Técnica"} textpos={"left"} rotation={[0, THREE.MathUtils.degToRad(-110), Math.PI]} scale={5} to={"/movilidad-tecnica"} giro={giro}/>
+          <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[35, -13, 20]} dir={"Bienestar\nGaleria"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(-100), -Math.PI/2]} scale={5} to={"/bienestar-galeria"} giro={giro}/>
+          <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[-35, -7, 5]} dir={"Entrada"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(65), 0]} scale={5} to={"/"} giro={giro}/>
         </Room>
       </Blur>
 

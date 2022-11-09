@@ -10,7 +10,7 @@ function Footer(props) {
     return ( 
         <div className="footerCont animate__animated animate__fadeInUp">
             <a href="https://rareastudio.com/" target="_blank" className="rareaFooter"></a>
-            <a href="https://kaldevi.es/" target="_blank" className="kaldeviFooter"></a>
+            <a href="https://ortopedia.kaldevi.com/" target="_blank" className="kaldeviFooter"></a>
 
             {(breakpoints.sm && props.giro) && <img id="IconGiroOn" onClick={() => props.setGiro(false)} src="/IconGiroOn_white.svg" className="gyroscope icon" alt="Icon Gyroscope On" />}
 

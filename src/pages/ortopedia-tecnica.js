@@ -34,14 +34,15 @@ const OrtopediaTecnica = () => {
       <Blur page={page} setBlur={setWelcome} blur={welcome}>
         <Room 
           giro={giro}
+          setGiro={setGiro}
           breakpoints={breakpoints} 
           productData={productData} 
           listActive={listActive} 
           setLoading={setLoading} 
           welcome={welcome}
           panorama={'/pano_tech1.jpg'}>
-            <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[-0, -10, 30]} rotation={[0, THREE.MathUtils.degToRad(180), -Math.PI/2]} dir={"Ortopedia\nGalería"} textpos={"left"} scale={4} to={"/ortopedia-galeria"}/>
-            <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[5, -10, -30]} rotation={[0, THREE.MathUtils.degToRad(0), -Math.PI/2]} dir={"Patio\nKaldevi"} textpos={"left"} scale={4} to={"/patio"} />
+            <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[-0, -10, 30]} rotation={[0, THREE.MathUtils.degToRad(180), -Math.PI/2]} dir={"Ortopedia\nGalería"} textpos={"left"} scale={4} to={"/ortopedia-galeria"} giro={giro}/>
+            <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[5, -10, -30]} rotation={[0, THREE.MathUtils.degToRad(0), -Math.PI/2]} dir={"Patio\nKaldevi"} textpos={"left"} scale={4} to={"/patio"} giro={giro} />
           </Room>
 
       </Blur>

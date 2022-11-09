@@ -71,7 +71,7 @@ function Room(props) {
                 camera={ {fov: 60, near: 0.1, far: 1000, position: [0, 0, 1]} } 
                 flat 
                 linear >
-                    <CustomControls breakpoints={props.breakpoints} autoRotate={firstClick} giro={props.giro} welcome={props.welcome}/>
+                    <CustomControls breakpoints={props.breakpoints} autoRotate={firstClick} giro={props.giro} setGiro={props.setGiro} welcome={props.welcome}/>
                     {/* <ambientLight />
                     <pointLight position={[10, 10, 10]} /> */}
 
@@ -87,9 +87,9 @@ function Room(props) {
                             <group rotation={[0, THREE.MathUtils.degToRad(-100), 0]}>
                                 <Dome panorama={'/pano_entry.jpg'}/>
                                 
-                                <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[25, -7, 0]} dir={"Patio\nKaldevi"} textpos={"left"} rotation={[0, -Math.PI/2, -Math.PI/2]} scale={4} to={"/patio"}/>
-                                <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[-10, 0, 40]} dir={"Ortopedia\nGalería"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(180), 0]} scale={4} to={"/ortopedia-galeria"}/>
-                                <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[-10, 0, -40]} dir={"Movilidad\nGalería"} textpos={"left"} rotation={[0, THREE.MathUtils.degToRad(0), -Math.PI]} scale={4} to={"/movilidad-galeria"}/>
+                                <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[25, -7, 0]} dir={"Patio\nKaldevi"} textpos={"left"} rotation={[0, -Math.PI/2, -Math.PI/2]} scale={4} to={"/patio"} giro={props.giro}/>
+                                <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[-10, 0, 40]} dir={"Ortopedia\nGalería"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(180), 0]} scale={4} to={"/ortopedia-galeria"} giro={props.giro}/>
+                                <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[-10, 0, -40]} dir={"Movilidad\nGalería"} textpos={"left"} rotation={[0, THREE.MathUtils.degToRad(0), -Math.PI]} scale={4} to={"/movilidad-galeria"} giro={props.giro}/>
 
                                 <Image 
                                     position={[99, 18, -205]} 

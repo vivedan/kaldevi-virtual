@@ -35,7 +35,7 @@ const IndexPage = () => {
       {!welcome && <Header setAudio={setAudio} audio={audio} page={page} setListActive={setListActive} listActive={listActive} />}
       <Footer  giro={giro} setGiro={setGiro}/>
       <Blur page={page} setBlur={setWelcome} blur={welcome}>
-        <Room breakpoints={breakpoints} listActive={listActive} setLoading={setLoading} welcome={welcome} giro={giro} />
+        <Room breakpoints={breakpoints} listActive={listActive} setLoading={setLoading} welcome={welcome} giro={giro} setGiro={setGiro}/>
       </Blur>
       
       <Audio audio={audio} setAudio={setAudio} isActive={welcome}/>

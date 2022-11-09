@@ -66,7 +66,7 @@ function Room(props) {
         <div className="main-cont">
             <animated.div style={{...canvasStyle}} onClick={() => setFirstClick(true)} >
                 <Canvas onCreated={() => props.setLoading(false)} camera={ {fov: 60, near: 0.1, far: 1000, position: [0, 0, 1]} } flat linear >
-                    <CustomControls breakpoints={props.breakpoints} autoRotate={firstClick} giro={props.giro} welcome={props.welcome}/>
+                    <CustomControls breakpoints={props.breakpoints} autoRotate={firstClick} giro={props.giro} setGiro={props.setGiro} welcome={props.welcome}/>
                     {/* <ambientLight />
                     <pointLight position={[10, 10, 10]} /> */}
 
@@ -82,10 +82,10 @@ function Room(props) {
                         <group rotation={[0, THREE.MathUtils.degToRad(90), 0]}>
                             <Dome panorama={'/pano_patio.jpg'}/>
                             
-                            <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[35, 0, 0]} dir={"Ortopedia\nZona Técnica"} textpos={"right"} rotation={[0, -Math.PI/2, 0]} scale={4} to={"/ortopedia-tecnica"}/>
-                            <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[2, -8, -25]} dir={"Bienestar\nZona Técnica"} textpos={"right"} rotation={[0, 0, -Math.PI/2]} scale={4} to={"/bienestar-tecnica"}/>
-                            <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[-25, -12, 15]} dir={"Movilidad\nZona Técnica"} textpos={"left"} rotation={[0, THREE.MathUtils.degToRad(110), -Math.PI/2]} scale={5} to={"/movilidad-tecnica"}/>
-                            <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[10, -5, 35]} dir={"Entrada"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(225), -Math.PI/2]} scale={4} to={"/"}/>
+                            <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[35, 0, 0]} dir={"Ortopedia\nZona Técnica"} textpos={"right"} rotation={[0, -Math.PI/2, 0]} scale={4} to={"/ortopedia-tecnica"} giro={props.giro}/>
+                            <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[2, -8, -25]} dir={"Bienestar\nZona Técnica"} textpos={"right"} rotation={[0, 0, -Math.PI/2]} scale={4} to={"/bienestar-tecnica"} giro={props.giro}/>
+                            <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[-25, -12, 15]} dir={"Movilidad\nZona Técnica"} textpos={"left"} rotation={[0, THREE.MathUtils.degToRad(110), -Math.PI/2]} scale={5} to={"/movilidad-tecnica"} giro={props.giro}/>
+                            <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[10, -5, 35]} dir={"Entrada"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(225), -Math.PI/2]} scale={4} to={"/"} giro={props.giro}/>
 
                             <Image 
                                 position={[310, -65, -395]} 
