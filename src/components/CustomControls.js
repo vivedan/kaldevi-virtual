@@ -45,8 +45,8 @@ function CustomControls(props) {
                             props.setGiro(false);
                         }
                     }else{
-                        if (typeof DeviceMotionEvent.requestPermission === 'function') {
-                            DeviceMotionEvent.requestPermission().then(response => {
+                        if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+                            DeviceOrientationEvent.requestPermission().then(response => {
                                 if (response == 'granted') {
                                     console.log("accelerometer permission granted");
                                     // Do stuff here
