@@ -29,6 +29,20 @@ function Blur({page, blur, setBlur, children}) {
         cursor: "pointer"
     } */
 
+    function handleClick(){
+        if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+            DeviceOrientationEvent.requestPermission().then(response => {
+                if (response == 'granted') {
+                    console.log("accelerometer permission granted");
+                    // Do stuff here
+                    setBlur(false)
+                }
+            });
+        }else{
+            setBlur(false)
+        }
+    }
+
     return (
         <div>
             
@@ -41,7 +55,7 @@ function Blur({page, blur, setBlur, children}) {
 
             {/* <div className="blurBackground"></div> */}
             
-            {blur && <div className="blurMainCont" onClick={() => setBlur(false)}>
+            {blur && <div className="blurMainCont" onClick={() => handleClick()}>
                 <div className="blurBackground"></div>
                 <div className="blurLogo"></div>
                 <h2 className="blurEnter">ENTRAR A</h2>

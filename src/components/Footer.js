@@ -9,7 +9,7 @@ function Footer(props) {
     const breakpoints = useBreakpoint();
 
     function handleClick(state){
-        if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+        /* if (typeof DeviceOrientationEvent.requestPermission === 'function') {
             DeviceOrientationEvent.requestPermission().then(response => {
                 if (response == 'granted') {
                     console.log("accelerometer permission granted");
@@ -17,9 +17,9 @@ function Footer(props) {
                     props.setGiro(state ? true : false);
                 }
             });
-        }else{
+        }else{ */
             props.setGiro(state ? true : false);
-        }
+        //}
     }
 
     return ( 
