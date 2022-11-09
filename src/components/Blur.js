@@ -31,13 +31,15 @@ function Blur({page, blur, setBlur, children}) {
 
     function handleClick(){
         if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+            setBlur(false);
             DeviceOrientationEvent.requestPermission().then(response => {
                 if (response == 'granted') {
                     console.log("accelerometer permission granted");
                     // Do stuff here
-                    setBlur(false)
+                    
                 }
             });
+            
         }else{
             setBlur(false)
         }
