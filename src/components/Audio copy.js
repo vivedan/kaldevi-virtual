@@ -1,23 +1,13 @@
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useSpring, animated } from 'react-spring';
 
-//const audioRef = new Audio("/audios/Kaldevi_ambience1.mp3");
-
-function Audio({isActive, audio, setAudio}){
+export default function Audio({isActive, audio, setAudio}){
     //const [audio, setAudio] = useState(false);
-    //const audioSrc = "/audios/Kaldevi_ambience1.mp3";
     const audioRef = useRef();
-    
-    //const musicRef = useRef();
+    const musicRef = useRef();
 
-    //const [audioRef, setAudioRef] = useState(new Audio (audioSrc));
-
-    //const volumeAmbience = useSpring({volume: audio ? 1 : 0});
-
-    /* useEffect(() => {
-      audioRef.current.play();
-      console.log(audioRef)
-    }, []) */
+    const volumeAmbience = useSpring({volume: audio ? 1 : 0});
+    const volumeMusic = useSpring({volume: audio ? 0.1 : 0});
 
     useEffect(() => {
       if(!isActive){
@@ -33,19 +23,22 @@ function Audio({isActive, audio, setAudio}){
         audioRef.current.play();
 
         //Start music at random point
-        //musicRef.current.currentTime = Math.floor(Math.random() * (musicRef.current.duration - 0 + 1) + 0)
-        //musicRef.current.volume = 0;
-        //musicRef.current.play();
+        musicRef.current.currentTime = Math.floor(Math.random() * (musicRef.current.duration - 0 + 1) + 0)
+        musicRef.current.volume = 0;
+        musicRef.current.play();
 
         fadeIn(audioRef, 0.9);
+        fadeIn(musicRef, 0.1);
         
       }else{
-        //audioRef.current.pause();
-        //musicRef.current.pause();
+        /* audioRef.current.pause();
+        musicRef.current.pause(); */
         if(isActive){
           audioRef.current.pause();
+          musicRef.current.pause();
         }else{
           fadeOut(audioRef);
+          fadeOut(musicRef);
         }
         
       }
@@ -75,8 +68,7 @@ function Audio({isActive, audio, setAudio}){
     return (
       <div style={{display: "none"}}>
         <audio ref={audioRef} src="/audios/Kaldevi_ambience1.mp3" loop></audio>
+        <audio ref={musicRef} src="/audios/Kaldevi_music_cut.mp3" loop></audio>
       </div>
     )
 }
-
-export default Audio;

@@ -85,7 +85,7 @@ function Room(props) {
                                 setImageSelected={setImageSelected}
                                 /> */}
                             <group rotation={[0, THREE.MathUtils.degToRad(-100), 0]}>
-                                <Dome panorama={'/pano_entry.jpg'}/>
+                                <Dome panorama={'/pano_entry_redux 4.webp'}/>
                                 
                                 <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[25, -7, 0]} dir={"Patio\nKaldevi"} textpos={"left"} rotation={[0, -Math.PI/2, -Math.PI/2]} scale={4} to={"/patio"} giro={props.giro}/>
                                 <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[-10, 0, 40]} dir={"Ortopedia\nGalería"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(180), 0]} scale={4} to={"/ortopedia-galeria"} giro={props.giro}/>
