@@ -51,7 +51,7 @@ function Arrow(props) {
         props.setLoading(true);
         setTimeout(()=>{
             navigate(props.to, {state: { giro: props.giro }})
-        }, 1000)
+        }, 400)//TIME TO OUT
         
     }
 
