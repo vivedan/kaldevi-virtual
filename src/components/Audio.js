@@ -40,13 +40,13 @@ function Audio({isActive, audio, setAudio}){
         fadeIn(audioRef, 0.9);
         
       }else{
-        //audioRef.current.pause();
+        audioRef.current.pause();
         //musicRef.current.pause();
-        if(isActive){
+        /* if(isActive){
           audioRef.current.pause();
         }else{
           fadeOut(audioRef);
-        }
+        } */
         
       }
     }, [audio])
@@ -74,7 +74,7 @@ function Audio({isActive, audio, setAudio}){
 
     return (
       <div style={{display: "none"}}>
-        <audio ref={audioRef} src="/audios/Kaldevi_ambience1.mp3" loop></audio>
+        <audio ref={audioRef} src="/audios/Kaldevi_music_cut.mp3" loop></audio>
       </div>
     )
 }
