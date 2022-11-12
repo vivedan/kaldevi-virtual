@@ -1,23 +1,23 @@
-import React, { Component, Suspense, useState, useEffect } from 'react';
+import React, { Suspense, useState, useEffect } from 'react';
 
 import * as THREE from 'three';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { PerspectiveCamera, PositionalAudio, Box, OrbitControls } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+//import { PerspectiveCamera, PositionalAudio, Box, OrbitControls } from '@react-three/drei';
 
 import { useSpring, animated, config } from 'react-spring';
 
-import Model from './Model';
+//import Model from './Model';
 
 import '../styles/styles.css';
 
 import Dome from './Dome';
-import ProductInfo from './ProductInfo';
-import ImageInfo from './ImageInfo';
+//import ProductInfo from './ProductInfo';
+//import ImageInfo from './ImageInfo';
 import Arrow from './Arrow';
 
 import Image from './Image';
 import Video from './Video';
-import Overlay from './Overlay';
+//import Overlay from './Overlay';
 import AudioClick from './AudioClick';
 import CustomControls from './CustomControls';
 
@@ -30,7 +30,7 @@ function Room(props) {
         console.log(projectSelected);
     }, [projectSelected]) */
 
-    const [overlay, setOverlay] = useState(true);
+    //const [overlay, setOverlay] = useState(true);
     const [clicked, setClicked] = useState(false);
 
     const [blur, setBlur] = useState(false);
@@ -85,7 +85,7 @@ function Room(props) {
                                 setImageSelected={setImageSelected}
                                 /> */}
                             <group rotation={[0, THREE.MathUtils.degToRad(-100), 0]}>
-                                <Dome panorama={'/pano_entry_redux 4.webp'}/>
+                                <Dome panorama={'/panos/pano_entry.webp'}/>
                                 
                                 <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[25, -7, 0]} dir={"Patio\nKaldevi"} textpos={"left"} rotation={[0, -Math.PI/2, -Math.PI/2]} scale={4} to={"/patio"} giro={props.giro}/>
                                 <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[-10, 0, 40]} dir={"Ortopedia\nGalería"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(180), 0]} scale={4} to={"/ortopedia-galeria"} giro={props.giro}/>

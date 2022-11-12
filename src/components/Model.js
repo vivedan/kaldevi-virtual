@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import * as THREE from 'three';
-import { useGLTF, useHelper, BoxHelper, useCursor } from '@react-three/drei';
+import { useGLTF, useCursor } from '@react-three/drei';
 
 import { useSpring, animated, config } from '@react-spring/three';
 

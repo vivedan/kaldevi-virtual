@@ -14,7 +14,7 @@ function Overlay(props) {
             setTimeout(() => {
                 setActive(false);
                 //console.log(props.visible)
-            }, 1000)
+            }, 500) //TIME THE OVERLAY IS UP
         }else{
             setActive(true);
         }

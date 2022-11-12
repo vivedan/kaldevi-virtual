@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 //import { extend } from '@react-three/fiber'
 
 import { Circle, useCursor } from '@react-three/drei';

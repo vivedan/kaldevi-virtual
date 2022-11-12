@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
-import { useSpring, animated } from 'react-spring';
+import { useSpring } from 'react-spring';
 
 export default function useAudio(isActive){
     const [audio, setAudio] = useState(false);
     const audioRef = useRef();
     const musicRef = useRef();
 
-    const volumeAmbience = useSpring({volume: audio ? 1 : 0});
-    const volumeMusic = useSpring({volume: audio ? 1 : 0});
+    //const volumeAmbience = useSpring({volume: audio ? 1 : 0});
+    //const volumeMusic = useSpring({volume: audio ? 1 : 0});
 
     useEffect(() => {
       if(!isActive){

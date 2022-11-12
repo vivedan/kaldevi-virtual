@@ -1,10 +1,10 @@
-import { Html, Plane, useCursor, useTexture } from '@react-three/drei';
-import React, { useState, useEffect } from 'react';
-import { navigate } from "gatsby";
-import * as THREE from 'three';
-import { useThree } from '@react-three/fiber';
+//import { Html, Plane, useCursor, useTexture } from '@react-three/drei';
+import React from 'react';
+//import { navigate } from "gatsby";
+//import * as THREE from 'three';
+//import { useThree } from '@react-three/fiber';
 
-import { animated, useSpring, config } from '@react-spring/three';
+//import { animated, useSpring, config } from '@react-spring/three';
 
 import '../styles/styles.css';
 

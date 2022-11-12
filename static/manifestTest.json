@@ -1,0 +1,51 @@
+{
+    "short_name": "Kaldevi",
+    "name": "Kaldevi Showroom Virtual",
+    "icons": [
+      {
+        "src": "Kaldevi_Icon192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "Kaldevi_Icon512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#416383",
+    "display": "standalone",
+    "orientation": "landscape",
+    "scope": "/",
+    "theme_color": "#416383",
+    "shortcuts": [
+      {
+        "name": "Patio Kaldevi",
+        "short_name": "Patio",
+        "description": "El Patio Kaldevi representa la vena social de la empresa.",
+        "url": "/patio",
+        "icons": [{ "src": "Kaldevi_Icon192.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "Galería Bienestar",
+        "short_name": "Galería Bienestar",
+        "description": "La Galería de la zona Bienestar presenta uno de los productos más destacados en Kaldevi, mostrando todo su potencial de una forma alternativa que destaca su valor de diseño.",
+        "url": "/bienestar-galeria",
+        "icons": [{ "src": "Kaldevi_Icon192.png", "sizes": "192x192" }]
+      }
+    ],
+    "description": "Showroom virtual de la empresa valenciana Kaldevi, con zonas de especialización orientadas a la ortopedia técnica, el bienestar y la movilidad.",
+    "screenshots": [
+      {
+        "src": "Kaldevi_Screenshot1.jpg",
+        "type": "image/jpg",
+        "sizes": "1898x2373"
+      },
+      {
+        "src": "Kaldevi_Screenshot2.jpg",
+        "type": "image/jpg",
+        "sizes": "1898x2373"
+      }
+    ]
+  }

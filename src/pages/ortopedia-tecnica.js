@@ -1,4 +1,4 @@
-import React, { Component, Suspense, useState, useEffect } from "react";
+import React, { useState } from "react";
 import Room from '../components/RoomTech';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -40,7 +40,7 @@ const OrtopediaTecnica = () => {
           listActive={listActive} 
           setLoading={setLoading} 
           welcome={welcome}
-          panorama={'/pano_tech1.jpg'}>
+          panorama={'/panos/pano_tech1.webp'}>
             <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[-0, -10, 30]} rotation={[0, THREE.MathUtils.degToRad(180), -Math.PI/2]} dir={"Ortopedia\nGalería"} textpos={"left"} scale={4} to={"/ortopedia-galeria"} giro={giro}/>
             <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[5, -10, -30]} rotation={[0, THREE.MathUtils.degToRad(0), -Math.PI/2]} dir={"Patio\nKaldevi"} textpos={"left"} scale={4} to={"/patio"} giro={giro} />
           </Room>

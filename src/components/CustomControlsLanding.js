@@ -1,5 +1,5 @@
-import React, { Component, useEffect, useState } from 'react';
-import { DeviceOrientationControls, OrbitControls } from '@react-three/drei';
+import React, { useEffect, useState } from 'react';
+import { OrbitControls } from '@react-three/drei';
 //import { useBreakpoint, BreakpointProvider } from 'gatsby-plugin-breakpoints';
 
 
@@ -9,7 +9,7 @@ function CustomControls(props) {
 
     //const breakpoints = useBreakpoint();
     const [freeze, setFreeze] = useState(false);
-    const [mobileGiro, setMobileGiro] = useState(false);
+    //const [mobileGiro, setMobileGiro] = useState(false);
 
     useEffect(() => {
         //console.log(props.target)

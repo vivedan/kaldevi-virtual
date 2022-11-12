@@ -1,20 +1,20 @@
-import React, { Component, Suspense, useState, useEffect } from 'react';
+import React, { Suspense, useState, useEffect } from 'react';
 
 import * as THREE from 'three';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { PerspectiveCamera, PositionalAudio, Box, OrbitControls, Plane } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+import { Plane } from '@react-three/drei';
 
 import { useSpring, animated, config } from 'react-spring';
 
-import Model from './Model';
+//import Model from './Model';
 
 import '../styles/styles.css';
 
 import Dome from './Dome';
 import DomeOverlay from './DomeOverlay';
-import ProductInfo from './ProductInfo';
-import ImageInfo from './ImageInfo';
-import Arrow from './Arrow';
+//import ProductInfo from './ProductInfo';
+//import ImageInfo from './ImageInfo';
+//import Arrow from './Arrow';
 import Comment from './Comment';
 import CustomControls from './CustomControls';
 import AudioClick from './AudioClick';

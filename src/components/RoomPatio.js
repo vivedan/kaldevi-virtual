@@ -1,17 +1,17 @@
-import React, { Component, Suspense, useState, useEffect } from 'react';
+import React, { Suspense, useState, useEffect } from 'react';
 
 import * as THREE from 'three';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { PerspectiveCamera, PositionalAudio, Box, OrbitControls } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+//import { PerspectiveCamera, PositionalAudio, Box, OrbitControls } from '@react-three/drei';
 
 import { useSpring, animated, config } from 'react-spring';
 
-import Model from './Model';
+//import Model from './Model';
 
 import '../styles/styles.css';
 
 import Dome from './Dome';
-import ProductInfo from './ProductInfo';
+//import ProductInfo from './ProductInfo';
 import ImageInfo from './ImageInfoPatio';
 import Arrow from './Arrow';
 
@@ -80,7 +80,7 @@ function Room(props) {
                                 setImageSelected={setImageSelected}
                                 /> */}
                         <group rotation={[0, THREE.MathUtils.degToRad(90), 0]}>
-                            <Dome panorama={'/pano_patio.jpg'}/>
+                            <Dome panorama={'/panos/pano_patio.webp'}/>
                             
                             <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[35, 0, 0]} dir={"Ortopedia\nZona Técnica"} textpos={"right"} rotation={[0, -Math.PI/2, 0]} scale={4} to={"/ortopedia-tecnica"} giro={props.giro}/>
                             <Arrow breakpoints={props.breakpoints} setLoading={props.setLoading} position={[2, -8, -25]} dir={"Bienestar\nZona Técnica"} textpos={"right"} rotation={[0, 0, -Math.PI/2]} scale={4} to={"/bienestar-tecnica"} giro={props.giro}/>

@@ -1,5 +1,5 @@
 import { Html, Plane } from '@react-three/drei';
-import React, { Component } from 'react';
+import React from 'react';
 
 import 'animate.css';
 

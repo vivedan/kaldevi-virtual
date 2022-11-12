@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { DeviceOrientationControls, OrbitControls } from '@react-three/drei';
 //import { useBreakpoint, BreakpointProvider } from 'gatsby-plugin-breakpoints';
 

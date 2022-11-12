@@ -1,4 +1,4 @@
-import React, { Component, Suspense, useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import Room from '../components/RoomGaleria';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -38,8 +38,8 @@ const IndexPage = () => {
           listActive={listActive} 
           setLoading={setLoading} 
           welcome={welcome}
-          panorama={'/pano_art3.jpg'}
-          panoramaB={'/pano_art3_b.jpg'}
+          panorama={'/panos/pano_art3.webp'}
+          panoramaB={'/panos/pano_art3_b.webp'}
           detectorPosition={[85, 10, -3]}
           detectorRotation={[0, THREE.MathUtils.degToRad(-90), THREE.MathUtils.degToRad(10)]}
           comments={commentsData}

@@ -1,7 +1,6 @@
-import React, { Component, useEffect } from 'react';
+import React from 'react';
 import * as THREE from 'three';
 import { useLoader } from '@react-three/fiber';
-import { useSpring, animated } from '@react-spring/three';
 
 
 

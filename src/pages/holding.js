@@ -1,13 +1,9 @@
-import React, { Component, Suspense, useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import Room from '../components/RoomLanding';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import Blur from '../components/Blur';
+
 
 import { useBreakpoint, BreakpointProvider } from 'gatsby-plugin-breakpoints';
-import Audio from '../components/Audio';
 
-import Overlay from '../components/LoaderOverlay';
 import { Seo } from "../components/SEO"
 
 const IndexPage = () => {

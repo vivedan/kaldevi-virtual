@@ -1,23 +1,8 @@
-import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { useSpring, animated } from 'react-spring';
+import React, { useEffect, useRef} from 'react';
 
-//const audioRef = new Audio("/audios/Kaldevi_ambience1.mp3");
 
 function Audio({isActive, audio, setAudio}){
-    //const [audio, setAudio] = useState(false);
-    //const audioSrc = "/audios/Kaldevi_ambience1.mp3";
     const audioRef = useRef();
-    
-    //const musicRef = useRef();
-
-    //const [audioRef, setAudioRef] = useState(new Audio (audioSrc));
-
-    //const volumeAmbience = useSpring({volume: audio ? 1 : 0});
-
-    /* useEffect(() => {
-      audioRef.current.play();
-      console.log(audioRef)
-    }, []) */
 
     useEffect(() => {
       if(!isActive){
@@ -53,7 +38,6 @@ function Audio({isActive, audio, setAudio}){
 
 
     function fadeOut(sound){
-      //console.log(sound)
       if(sound.current.volume > 0.01){
           sound.current.volume -= 0.01;
           setTimeout(() => fadeOut(sound), 2);
@@ -64,8 +48,6 @@ function Audio({isActive, audio, setAudio}){
     }
 
     function fadeIn(sound, finalVol){
-      //console.log(sound)
-      //sound.current.play();
       if(sound.current.volume < finalVol){
           sound.current.volume += 0.01;
           setTimeout(() => fadeIn(sound, finalVol), 2);

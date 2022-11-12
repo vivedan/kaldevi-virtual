@@ -4,7 +4,7 @@ import { navigate } from "gatsby";
 import * as THREE from 'three';
 
 import { animated, useSpring, config } from '@react-spring/three';
-import { a } from '@react-spring/core';
+//import { a } from '@react-spring/core';
 
 import '../styles/styles.css';
 import ArrowLabel from './ArrowLabel';
@@ -15,7 +15,7 @@ import AudioClick from './AudioClick';
 function Arrow(props) {
     const texture = useTexture('/Arrow1.png')
 
-    const [rotation, setRotation] = useState([0, -Math.PI/2, 0]);
+    //const [rotation, setRotation] = useState([0, -Math.PI/2, 0]);
     const [position, setPosition] = useState(-3.2);
     const [hovered, setHovered] = useState(false);
     const [audio, setAudio] = useState(false);
@@ -35,7 +35,7 @@ function Arrow(props) {
     
 
     useEffect(()=>{
-        const orPos = 3.2;
+        //const orPos = 3.2;
         if(props.textpos === "right"){
             setPosition(3.2)
         }else if(props.textpos === "left"){

@@ -1,6 +1,6 @@
-import { Html, Plane, useCursor, useTexture } from '@react-three/drei';
-import React, { useState, useEffect } from 'react';
-import { navigate } from "gatsby";
+import { Plane, useCursor, useTexture } from '@react-three/drei';
+import React, { useState } from 'react';
+//import { navigate } from "gatsby";
 import * as THREE from 'three';
 
 import UICircle from './UICircle';
