@@ -33,7 +33,7 @@ let pr1ZTOrtopedia = {
             link: "https://ortopedia.kaldevi.com/producto/ferula-3d-exos/",
         },
         {
-            src: "/related/ot1_2.webp",
+            src: "/related/ot1_2.jpg",
             title: "Cojín antiescara Alova",
             link: "https://ortopedia.kaldevi.com/producto/cojin-antiescaras-alova/",
         },
@@ -142,15 +142,15 @@ let pr4ZTOrtopedia = {
     images: [
         {
             src: "/ot4/1.webp",
-            description: "PASO 2. COLOCAREMOS LA ROPA INTERIOR / PAÑAL / PANTALÓN EN LOS EXTREMOS DEL SOPORTE, QUEDANDO SUJETA POR LOS CUATRO VELCROS PARA QUE NO SE RESBALE.",
+            description: "Paso 2. Colocaremos la ropa interior / pañal / pantalón en los extremos del soporte, quedando sujeta por los cuatro velcros para que no se resbale.",
         },
         {
             src: "/ot4/2.webp",
-            description: "PASO 3. APOYAREMOS EL SOPORTE EN EL SUELO CON LA PRENDA YA SUJETA E INTRODUCIREMOS LOS PIES EN LAS ABERTURAS DE LA PRENDA.",
+            description: "Paso 3. Apoyaremos el soporte en el suelo con la prenda ya sujeta e introduciremos los pies en las aberturas de la prenda.",
         },
         {
             src: "/ot4/3.webp",
-            description: "PASO 4. SUBIMOS EL SOPORTE HASTA UNA ALTURA SUPERIOR A LAS RODILLAS, DONDE RESULTE CÓMODO ALCANZAR LA PRENDA CON LAS MANOS.",
+            description: "Paso 4. Subimos el soporte hasta una altura superior a las rodillas, donde resulte cómodo alcanzar la prenda con las manos.",
         },
         
         {
@@ -160,7 +160,7 @@ let pr4ZTOrtopedia = {
         
         {
             src: "/ot4/5.webp",
-            description: "PASO 1. COGEMOS LA VARILLA POR EL MANGO Y, MEDIANTE MOVIMIENTOS CIRCULARES, LA INTRODUCIMOS EN LA BASE DEL SOPORTE.",
+            description: "Paso 1. Cogemos la varilla por el mango y, mediante movimientos circulares, la introducimos en la base del soporte.",
         },
     ],
     relatedProducts: [

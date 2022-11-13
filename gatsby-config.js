@@ -5,6 +5,7 @@ const myCustomQueries = {
   sm: '(max-width: 926px)',
   md: '(max-width: 1024px)',
   l: '(max-width: 1536px)',
+  portrait: '(orientation: portrait)',
 };
 
 module.exports = {

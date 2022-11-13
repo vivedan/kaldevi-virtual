@@ -35,14 +35,22 @@ function Room(props) {
 
     const targets = [[-0.5, 0, -2.8], [1.5, 0, -0.8], [0.9, 0, 2.8], [-0.9, 0, 2.8]]
 
+    //targets for mobile portrait
+    const targetsPortrait = [[-1, -1.3, -2.8], [0.3, -0.3, -0.8], [2.5, -1.3, 2.8], [-0, -0.7, 2.8]]
+
     useEffect(()=>{
+        //console.log(props.breakpoints);
         if(!projectSelected){
             setImageSelected(null);
             setTarget([0, 0, 0])
         }else{
             let i = props.productData.indexOf(projectSelected);
             //setIndex(i);
-            setTarget(targets[i]);
+            if(props.breakpoints.portrait){
+                setTarget(targetsPortrait[i]);
+            }else{
+                setTarget(targets[i]);
+            }
         }
     }, [projectSelected])
 

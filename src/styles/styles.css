@@ -110,6 +110,9 @@ h1, h2, h3, h4{
     right: 0;
     bottom: 5px;
     z-index: 1000;
+    background: #416283;
+    border-radius: 10px;
+    opacity: 0.8;
 }
 
 .roomListCont{
@@ -378,7 +381,6 @@ h1, h2, h3, h4{
     width: auto;
     max-width: 80%;
     height: auto;
-    min-height: 300px;
     max-height: 50vh;
     background: white;
     position: relative;
@@ -387,7 +389,7 @@ h1, h2, h3, h4{
 
 .arrows{
     color: white;
-
+    margin: 0;
 }
 
 .closeImage{
@@ -674,15 +676,20 @@ h1, h2, h3, h4{
         z-index: 100000;
     }
 
-/*     .priceCont{
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0px 0 30px;
-    } */
+    .infoCont{
+        top: 60px;
+    }
+
+    .priceCont{
+        margin: 0;
+    }
+
+    .productTitle{
+        margin: 0;
+    }
 
     .relatedContent{
-        padding-bottom: 130px;
+        padding-bottom: 170px;
     }
 
     .imgRelated{
@@ -700,9 +707,9 @@ h1, h2, h3, h4{
     }
 
     .imageProduct{
-        max-height: 70%;
-        min-height: 30%;
+        max-height: 20vh;
         max-width: 70%;
+        margin: 20px 0px 0px;
     }
 
     .footImg{
@@ -742,6 +749,10 @@ h1, h2, h3, h4{
     .arrowDown{
         padding: 10px;
     }
+
+    .arrows{
+        margin: 0;
+    }
 	
   
 }
@@ -758,22 +769,41 @@ h1, h2, h3, h4{
 /* Landscape styles here */
     .infoBanner{
         overflow-y: scroll;
+        width: 40vw;
     }
 
     .closeButton{
         /* position: sticky; */
         z-index: 100000;
+        right: 38vw;
+    }
+
+    .infoCont{
+        top: 60px;
+    }
+
+    .productTitle{
+        margin: 0;
+    }
+
+    .priceCont{
+        margin: 0;
     }
 
     .relatedContent{
-        padding-bottom: 130px;
+        padding-bottom: 170px;
     }
 
     .imgRelated{
         height: 80px;
-        width: 80px;
+        width: 31%;;
     }
 
+    .imageInfoCont{
+        width: 50vw;
+        left: 5vw;
+        overflow-y: scroll;
+    }
 
     .imageInfoContAlone{
         max-height: 65vh;
@@ -784,9 +814,9 @@ h1, h2, h3, h4{
     }
 
     .imageProduct{
-        max-height: 50vh;
-        min-height: 30vh;
+        max-height: 40vh;
         max-width: 70%;
+        margin: 20px 0px 0px;
     }
 
     .roomTitle{
@@ -833,6 +863,10 @@ h1, h2, h3, h4{
         padding: 10px;
         top: 0;
         display: none;
+    }
+
+    .arrows{
+        margin: 0;
     }
 
 }

@@ -36,7 +36,7 @@ function ProductInfo(props) {
 
     const contactLink = "https://ortopedia.kaldevi.com/contacto/";
 
-    console.log(props.projectSelected.relatedProducts);
+    //console.log(props.projectSelected.relatedProducts);
 
     return ( 
         <div>
@@ -72,7 +72,7 @@ function ProductInfo(props) {
                         </a>
                     </div>
                 </div>
-                <div className="audioCont"></div>
+                {/* <div className="audioCont"></div> */}
                 <div className="infoDescription">{description}</div>
                 <br></br>
                 <div className="relatedCont">
