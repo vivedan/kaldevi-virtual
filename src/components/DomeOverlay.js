@@ -20,6 +20,7 @@ function DomeOverlay(props) {
       <mesh>
         <sphereBufferGeometry attach="geometry" args={[500, 60, 40]} />
         <animated.meshBasicMaterial attach="material" map={texture} side={THREE.BackSide} transparent opacity={opacity.opacity}></animated.meshBasicMaterial>
+        {/* {props.children} */}
       </mesh>
     )
 }

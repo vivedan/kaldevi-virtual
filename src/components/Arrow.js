@@ -58,13 +58,13 @@ function Arrow(props) {
     return (
         <group position={props.position} rotation={[0, props.rotation[1], 0]} scale={props.scale}>
             <Plane scale={2} position={[0, 0, 0.2]} onClick={()=> handleClick()} onPointerEnter={(e)=> {e.stopPropagation(); setHovered(!hovered)}} onPointerLeave={(e)=> {e.stopPropagation(); setHovered(!hovered)}}>
-            <meshStandardMaterial map={texture} transparent opacity={0} side={THREE.DoubleSide}/>
+            <meshStandardMaterial map={texture} alphaTest={0.25} alphaToCoverage={1} opacity={0} side={THREE.DoubleSide}/>
             </Plane>
             <Plane rotation={[props.rotation[0], 0, props.rotation[2]]} >
-                <meshStandardMaterial map={texture} transparent side={THREE.DoubleSide} emissive={"white"} emissiveIntensity={5} emissiveMap={texture}/> 
+                <meshStandardMaterial map={texture} alphaTest={0.25} alphaToCoverage={0.5} side={THREE.DoubleSide} emissive={"white"} emissiveIntensity={5} emissiveMap={texture}/> 
                 <animated.group position={arrowStyles.position}>
                     <Plane onClick={()=> handleClick()} onPointerEnter={()=>setHovered(!hovered)} onPointerLeave={()=>setHovered(!hovered)}>
-                        <animated.meshStandardMaterial map={texture} transparent side={THREE.DoubleSide} opacity={0.5} emissive={"yellow"} emissiveIntensity={arrowStyles.emission} emissiveMap={texture}/> 
+                        <animated.meshStandardMaterial map={texture} alphaTest={0.25} alphaToCoverage={1} side={THREE.DoubleSide} opacity={1} emissive={"#fcf392"} emissiveIntensity={arrowStyles.emission} emissiveMap={texture}/> 
                     </Plane>
                 </animated.group>
             </Plane>

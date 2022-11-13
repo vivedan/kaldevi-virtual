@@ -90,7 +90,7 @@ function Room(props) {
     return ( 
         <div className="main-cont">
             <animated.div style={{...canvasStyle}} onClick={() => setFirstClick(true)}>
-                <Canvas onCreated={() => props.setLoading(false)} camera={ {fov: 60, near: 0.1, far: 1000, position: [0, 0, 1]} } flat >
+                <Canvas onCreated={() => props.setLoading(false)} camera={ {fov: 60, near: 0.1, far: 1000, position: [0, 0, 1]} } flat linear dpr={[1, 2]}>
                     <CustomControls breakpoints={props.breakpoints} target={target} projectSelected={projectSelected} autoRotate={firstClick} giro={props.giro} setGiro={props.setGiro} welcome={props.welcome}/>
                     <ambientLight />
                     <pointLight position={[10, 10, 10]} />

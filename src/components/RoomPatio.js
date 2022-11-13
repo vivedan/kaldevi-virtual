@@ -65,7 +65,7 @@ function Room(props) {
     return ( 
         <div className="main-cont">
             <animated.div style={{...canvasStyle}} onClick={() => setFirstClick(true)} >
-                <Canvas onCreated={() => props.setLoading(false)} camera={ {fov: 60, near: 0.1, far: 1000, position: [0, 0, 1]} } flat linear >
+                <Canvas onCreated={() => props.setLoading(false)} camera={ {fov: 60, near: 0.1, far: 1000, position: [0, 0, 1]} } flat linear dpr={[1, 2]}>
                     <CustomControls breakpoints={props.breakpoints} autoRotate={firstClick} giro={props.giro} setGiro={props.setGiro} welcome={props.welcome}/>
                     {/* <ambientLight />
                     <pointLight position={[10, 10, 10]} /> */}
@@ -89,7 +89,7 @@ function Room(props) {
 
                             <Image 
                                 position={[310, -65, -395]} 
-                                src={"/patio_2_handle.jpg"} 
+                                src={"/patio_2_handle.webp"} 
                                 rotation={[0, THREE.MathUtils.degToRad(-55), 0]} 
                                 scale={20} 
                                 size={[6.5, 14]}
@@ -99,7 +99,7 @@ function Room(props) {
                                 setImageSelected={setImageSelected}/>
                             <Image 
                                 position={[-282, -135, 600]} 
-                                src={"/patio_3_handle.jpg"} 
+                                src={"/patio_3_handle.webp"} 
                                 rotation={[0, THREE.MathUtils.degToRad(-190), 0]} 
                                 scale={42} 
                                 size={[6.5, 14]}
@@ -109,7 +109,7 @@ function Room(props) {
                                 setImageSelected={setImageSelected}/>
                             <Image 
                                 position={[-382, -115, -400]} 
-                                src={"/patio_1_handle.jpg"} 
+                                src={"/patio_1_handle.webp"} 
                                 rotation={[0, THREE.MathUtils.degToRad(-300), 0]} 
                                 scale={35} 
                                 size={[6.5, 14]}

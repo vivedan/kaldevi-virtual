@@ -70,7 +70,8 @@ function Room(props) {
                 onCreated={() => props.setLoading(false)}
                 camera={ {fov: 60, near: 0.1, far: 1000, position: [0, 0, 1]} } 
                 flat 
-                linear >
+                linear 
+                dpr={[1, 2]}>
                     <CustomControls breakpoints={props.breakpoints} autoRotate={firstClick} giro={props.giro} setGiro={props.setGiro} welcome={props.welcome}/>
                     {/* <ambientLight />
                     <pointLight position={[10, 10, 10]} /> */}

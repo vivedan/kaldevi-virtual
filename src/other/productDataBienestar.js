@@ -8,11 +8,11 @@ let pr1ZTBienestar = {
     srcModel: "/TV_bien_1.glb",
     images: [
         {
-            src: "/bien1/1.jpg",
+            src: "/bien1/1.webp",
             description: "Formidabel ECO con protecciones laterales.",
         },
         {
-            src: "/bien1/2.jpg",
+            src: "/bien1/2.webp",
             description: "La cama ECO dispone de diferentes articulaciones, así como de carro elevador para ayudar al máximo bienestar sin forzar la postura.",
         },
         {
@@ -24,23 +24,23 @@ let pr1ZTBienestar = {
             description: "También dispone de un accesorio para proteger los remates alrededor de las ruedas.",
         },
         {
-            src: "/bien1/5.jpg",
+            src: "/bien1/5.webp",
             description: "También dispone de un accesorio para proteger los remates alrededor de las ruedas.",
         },
     ],
     relatedProducts: [
         {
-            src: "/related/bien1_1.jpg",
+            src: "/related/bien1_1.webp",
             title: "Cama FORMIDABLE",
             link: "https://kaldevi.com/producto/cama-geriatrica-formidabel/",
         },
         {
-            src: "/related/bien1_2.jpg",
+            src: "/related/bien1_2.webp",
             title: "Cama BERIT",
             link: "https://ortopedia.kaldevi.com/producto/cama-geriatrica-berit/",
         },
         {
-            src: "/related/bien1_3.jpg",
+            src: "/related/bien1_3.webp",
             title: "Cama GESEKO",
             link: "https://ortopedia.kaldevi.com/producto/cama-geriatrica-geseko/",
         },
@@ -77,17 +77,17 @@ let pr2ZTBienestar = {
     ],
     relatedProducts: [
         {
-            src: "/related/bien2_1.jpg",
+            src: "/related/bien2_1.webp",
             title: "Sillón Elisabeth",
             link: "https://kaldevi.com/producto/butaca-descanso-elisabeth/",
         },
         {
-            src: "/related/bien2_2.jpg",
+            src: "/related/bien2_2.webp",
             title: "Sillón Elysee",
             link: "https://ortopedia.kaldevi.com/producto/sillon-relax-elysee/",
         },
         {
-            src: "/related/bien2_3.jpg",
+            src: "/related/bien2_3.webp",
             title: "Balance Totalcare",
             link: "https://ortopedia.kaldevi.com/producto/silla-de-ruedas-basculante-balance/",
         },
@@ -102,40 +102,40 @@ let pr3ZTBienestar = {
     srcModel: "/TV_bien_3.glb",
     images: [
         {
-            src: "/bien3/1.jpg",
+            src: "/bien3/1.webp",
             description: "Genesy 1500 es ideal para su uso en el ámbito médico y rehabilitación e incluye todas las corrientes usadas para rehabilitación, fisioterapia y re-educación neuromotora.",
         },
         {
-            src: "/bien3/2.jpg",
+            src: "/bien3/2.webp",
             description: "La electroestimulación es una técnica que utiliza pequeños impulsos eléctricos para actuar en los puntos motores del músculo o en las terminaciones nerviosas, causando una contracción muscular similar a una contracción voluntaria.",
         },
         {
-            src: "/bien3/3.jpg",
+            src: "/bien3/3.webp",
             description: "Deporte. La electroestimulación genera una contracción muscular muy fuerte, que produce extraordinarios efectos de entrenamiento que aumentan rápidamente la calidad muscular y el rendimiento de los atletas.",
         },
         {
-            src: "/bien3/4.jpg",
+            src: "/bien3/4.webp",
             description: "Estética. Globus te ayuda a alcanzar toda la forma física y estética que siempre has deseado. La electroestimulación activa los músculos, mejora la circulación, ayuda al drenaje linfático y te da una nueva vitalidad y atractivo.",
         },
         {
-            src: "/bien3/5.jpg",
+            src: "/bien3/5.webp",
             description: "Salud. Globus te ayuda a recuperar la salud, el bienestar y una nueva oportunidad de vida gracias a sus corrientes pulsadas Tens que activan los mecanismos analgésicos naturales de tu cuerpo y eliminan el dolor.",
         },
         
     ],
     relatedProducts: [
         {
-            src: "/related/bien3_1.jpg",
+            src: "/related/bien3_1.webp",
             title: "Magnetoterapia Globus",
             link: "https://kaldevi.com/",
         },
         {
-            src: "/related/bien3_2.jpg",
+            src: "/related/bien3_2.webp",
             title: "Bandas elásticas",
             link: "https://kaldevi.com/",
         },
         {
-            src: "/related/bien3_3.jpg",
+            src: "/related/bien3_3.webp",
             title: "Pedallier",
             link: "https://kaldevi.com/",
         },
@@ -151,19 +151,19 @@ let pr4ZTBienestar = {
     srcModel: "/TV_bien_4.glb",
     images: [
         {
-            src: "/bien4/1.jpg",
+            src: "/bien4/1.webp",
             description: "La silla Clean encaja perfectamente sobre el wc estándar.",
         },
         {
-            src: "/bien4/2.jpg",
+            src: "/bien4/2.webp",
             description: "La apertura del asiento por detrás, garantiza la máxima intimidad para el cuidador y el usuario.",
         },
         {
-            src: "/bien4/3.jpg",
+            src: "/bien4/3.webp",
             description: "Nacida en los 90, su diseño de futuro la ha convertido en la silla móvil de ducha más vendida.",
         },
         {
-            src: "/bien4/4.jpg",
+            src: "/bien4/4.webp",
             description: "La silla está disponible en dos alturas: 49 o 55 cms, y en dos colores: blanco y verde.",
         },
         {
@@ -173,17 +173,17 @@ let pr4ZTBienestar = {
     ],
     relatedProducts: [
         {
-            src: "/related/bien4_1.jpg",
+            src: "/related/bien4_1.webp",
             title: "Asidero",
             link: "https://kaldevi.com/asideros/",
         },
         {
-            src: "/related/bien4_2.jpg",
+            src: "/related/bien4_2.webp",
             title: "Alza",
             link: "https://kaldevi.com/",
         },
         {
-            src: "/related/bien4_3.jpg",
+            src: "/related/bien4_3.webp",
             title: "Taburete",
             link: "https://kaldevi.com/",
         },

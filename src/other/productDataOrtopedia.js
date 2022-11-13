@@ -8,36 +8,36 @@ let pr1ZTOrtopedia = {
     srcModel: "/TV_ort_1.glb",
     images: [
         {
-            src: "/ot2/1.jpg",
+            src: "/ot2/1.webp",
             description: "La plantilla agrega estabilidad y mejora la postura, especialmente durante el ejercicio físico.",
         },
         {
-            src: "/ot2/2.jpg",
+            src: "/ot2/2.webp",
             description: "Proporciona a los pies sensibles un acolchado suave y amortiguador. Con ello, se pueden reducir los puntos de presión.",
         },
         {
-            src: "/ot2/3.jpg",
+            src: "/ot2/3.webp",
             description: "Mediante la disposición de almohadillas funcionales de diferente dureza se adapta a diferentes patrones de movimiento.",
         },
         
         {
-            src: "/ot2/4.jpg",
+            src: "/ot2/4.webp",
             description: "La plantilla amortigua suavemente todo el zapato y redistribuye los picos de presión, lo que es óptimo para las plantas de los pies doloridas.",
         },
     ],
     relatedProducts: [
         {
-            src: "/ot1/1.png",
+            src: "/ot1/1.webp",
             title: "Exos DJO",
             link: "https://kaldevi.es/ferulas-3d/",
         },
         {
-            src: "/related/ot1_2.jpg",
+            src: "/related/ot1_2.webp",
             title: "Cojín antiescara Alova",
             link: "https://ortopedia.kaldevi.com/producto/cojin-antiescaras-alova/",
         },
         {
-            src: "/ot4/1.jpg",
+            src: "/ot4/1.webp",
             title: "El soporte de mi abuelo",
             link: "https://www.elsoportedemiabuelo.com/",
         },
@@ -52,31 +52,31 @@ let pr2ZTOrtopedia = {
     srcModel: "/TV_ort_2.glb",
     images: [
         {
-            src: "/ot1/1.png",
+            src: "/ot1/1.webp",
             description: "Las férulas 3D están revolucionando el mundo de la Ortopedia.",
         },
         {
-            src: "/ot1/2.jpg",
+            src: "/ot1/2.webp",
             description: "Pequeñas fracturas o lesiones que antes suponían todo un quebradero de cabeza hasta el punto de tener que pasar nuestra recuperación en casa, ahora nos permiten seguir de forma natural con nuestras actividades.",
         },
         {
-            src: "/ot1/3.png",
+            src: "/ot1/3.webp",
             description: "Algo impensable con la escayola tradicional. La avanzada tecnología impresa de las férulas 3D sí lo permite.",
         },
     ],
     relatedProducts: [
         {
-            src: "/ot2/1.jpg",
+            src: "/ot2/1.webp",
             title: "Plantillas Bauerfeind",
             link: "https://kaldevi.com/",
         },
         {
-            src: "/ot3/1.jpg",
+            src: "/ot3/1.webp",
             title: "Tobilleras Airloc",
             link: "https://kaldevi.com",
         },
         {
-            src: "/related/ot2_3.jpg",
+            src: "/related/ot2_3.webp",
             title: "Taco Abductor UBIO",
             link: "https://ortopedia.kaldevi.com/producto/cojin-antiescaras-ergoplus-taco-abductor/",
         },
@@ -91,37 +91,37 @@ let pr3ZTOrtopedia = {
     srcModel: "/TV_ort_3.glb",
     images: [
         {
-            src: "/ot3/1.jpg",
+            src: "/ot3/1.webp",
             description: "AirLoc estabiliza el tobillo con dos cubiertas de plástico preformadas anatómicamente y ampliamente acolchadas en su interior.",
         },
         {
-            src: "/ot3/2.jpg",
+            src: "/ot3/2.webp",
             description: "Están conectados elásticamente por debajo del talón y se sujetan con dos correas de velcro que envuelven el tobillo y la pantorrilla.",
         },
         {
-            src: "/ot3/3.jpg",
+            src: "/ot3/3.webp",
             description: "Para que la ortesis no sólo se adapte a la anchura del pie, sino también a la hinchazón del tobillo lesionado, incorpora una cámara de aire adicional.",
         },
         
         {
-            src: "/ot3/4.jpg",
+            src: "/ot3/4.webp",
             description: "AirLoc te da la seguridad que necesitas para moverte correctamente y sin miedo a pesar de tu lesión, para que puedas volver a tu vida normal.",
         },
         
     ],
     relatedProducts: [
         {
-            src: "/ot1/1.png",
+            src: "/ot1/1.webp",
             title: "Exos DJO",
             link: "https://kaldevi.es/ferulas-3d/",
         },
         {
-            src: "/ot2/1.jpg",
+            src: "/ot2/1.webp",
             title: "Plantillas Bauerfeind",
             link: "https://kaldevi.com/",
         },
         {
-            src: "/related/ot3_3.jpg",
+            src: "/related/ot3_3.webp",
             title: "Cojin Viscoelastico Orliman",
             link: "https://ortopedia.kaldevi.com/producto/cojin-antiescaras-viscoelastico-cuadrado-con-memoria/",
         },
@@ -137,41 +137,41 @@ let pr4ZTOrtopedia = {
     srcModel: "/TV_ort_4.glb",
     images: [
         {
-            src: "/ot4/1.jpg",
+            src: "/ot4/1.webp",
             description: "PASO 2. COLOCAREMOS LA ROPA INTERIOR / PAÑAL / PANTALÓN EN LOS EXTREMOS DEL SOPORTE, QUEDANDO SUJETA POR LOS CUATRO VELCROS PARA QUE NO SE RESBALE.",
         },
         {
-            src: "/ot4/2.jpg",
+            src: "/ot4/2.webp",
             description: "PASO 3. APOYAREMOS EL SOPORTE EN EL SUELO CON LA PRENDA YA SUJETA E INTRODUCIREMOS LOS PIES EN LAS ABERTURAS DE LA PRENDA.",
         },
         {
-            src: "/ot4/3.jpg",
+            src: "/ot4/3.webp",
             description: "PASO 4. SUBIMOS EL SOPORTE HASTA UNA ALTURA SUPERIOR A LAS RODILLAS, DONDE RESULTE CÓMODO ALCANZAR LA PRENDA CON LAS MANOS.",
         },
         
         {
-            src: "/ot4/4.jpg",
+            src: "/ot4/4.webp",
             description: "Mejoremos la calidad de vida de aquellas personas que se vean afectadas por el paso de los años o la pérdida de movilidad, evitando que dependan de un tercero para vestirse.",
         },
         
         {
-            src: "/ot4/5.jpg",
+            src: "/ot4/5.webp",
             description: "PASO 1. COGEMOS LA VARILLA POR EL MANGO Y, MEDIANTE MOVIMIENTOS CIRCULARES, LA INTRODUCIMOS EN LA BASE DEL SOPORTE.",
         },
     ],
     relatedProducts: [
         {
-            src: "/ot2/1.jpg",
+            src: "/ot2/1.webp",
             title: "Plantillas Bauerfeind",
             link: "https://kaldevi.es/",
         },
         {
-            src: "/related/ot4_2.jpg",
+            src: "/related/ot4_2.webp",
             title: "Cojín herradura Orliman",
             link: "https://ortopedia.kaldevi.com/producto/cojin-antiescaras-viscoelastico-herradura/",
         },
         {
-            src: "/related/ot4_3.jpg",
+            src: "/related/ot4_3.webp",
             title: "C8 Adas",
             link: "https://ortopedia.kaldevi.com/producto/cojin-antiescaras-viscoelastico-postural-c8/",
         },

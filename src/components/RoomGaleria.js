@@ -55,7 +55,7 @@ function Room(props) {
     return ( 
         <div className="main-cont">
             <animated.div style={{...canvasStyle}} onClick={() => setFirstClick(true)} >
-                <Canvas onCreated={() => props.setLoading(false)} camera={ {fov: 60, near: 0.1, far: 1000, position: [0, 0, 1]} } flat linear >
+                <Canvas onCreated={() => props.setLoading(false)} camera={ {fov: 60, near: 0.1, far: 1000, position: [0, 0, 1]} } flat linear dpr={[1, 2]}>
                     <CustomControls breakpoints={props.breakpoints} autoRotate={firstClick} giro={props.giro} setGiro={props.setGiro} welcome={props.welcome}/>
                     {/* <OrbitControls 
                         enablePan={true} 
@@ -84,8 +84,8 @@ function Room(props) {
                                         
                                         scale={[13, 35, 1]} 
                                         rotation={props.detectorRotation}
-                                        material-transparent
                                         material-opacity={0}
+                                        material-alphaTest={0.5}
                                         onPointerEnter={()=>setOverlay(true)}
                                         onPointerLeave={()=>setOverlay(false)}
                                         onClick={()=> setClicked(!clicked)}>
@@ -96,8 +96,8 @@ function Room(props) {
                                     </group>
                                 </group>
                                 
-                                <Dome panorama={props.panorama}/>
-                                <DomeOverlay panorama={props.panoramaB} overlay={overlay} clicked={clicked} />
+                                <Dome panorama={props.panorama} overlay={overlay} clicked={clicked}>{props.children}</Dome>
+                                <DomeOverlay panorama={props.panoramaB} overlay={overlay} clicked={clicked}>{props.children}</DomeOverlay>
                                 {props.children}
                                 {(overlay || clicked) && <group>
                                     <Comment 
