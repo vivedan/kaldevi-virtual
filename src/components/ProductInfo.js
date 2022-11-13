@@ -12,6 +12,10 @@ function RelatedProducts(props) {
         color: '#416383',
         backgroundImage: 'url(' + src + ')',
         backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
     }
 
     return(
@@ -26,8 +30,11 @@ function RelatedProducts(props) {
 
 function ProductInfo(props) {
 
-    const {title, description, storeLink, images, relatedProducts} = props.projectSelected;
+    const {title, description, storeLink, images, price, relatedProducts} = props.projectSelected;
 
+    //const price = "10 €"
+
+    const contactLink = "https://ortopedia.kaldevi.com/contacto/";
 
     console.log(props.projectSelected.relatedProducts);
 
@@ -46,6 +53,11 @@ function ProductInfo(props) {
             <div className="infoCont">
                 <div className="titleCont">
                     <h2 className="productTitle">{title}</h2>
+                </div>
+                <div className="priceCont">
+                    <a href={(price === "Consultar precio" ? contactLink : storeLink)} target="_blank" className="tiendaButton">
+                        <p className="productPrice">{price}</p>
+                    </a>
                     <div className="storeCont">
                         <svg className="storeIcon icon" xmlns="http://www.w3.org/2000/svg" width="30" height="33" viewBox="0 0 30 33">
                             <g id="Icon_feather-shopping-bag"  data-name="Icon feather-shopping-bag" transform="translate(-3 -1.5)">
@@ -60,9 +72,9 @@ function ProductInfo(props) {
                         </a>
                     </div>
                 </div>
-
                 <div className="audioCont"></div>
                 <div className="infoDescription">{description}</div>
+                <br></br>
                 <div className="relatedCont">
                     <h4>Productos relacionados</h4>
                     <div className="imgRelatedCont">

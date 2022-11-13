@@ -3,8 +3,9 @@
 let pr1ZTOrtopedia = {
     room: "ztOrtopedia",
     title: "Plantillas Bauerfeind",
+    price: "Consultar precio",
     description: "Los pies son la base del cuerpo. Las plantillas ortopédicas descargan los pies, las articulaciones de la rodilla y de la cadera, así como la espalda. Ejercen una acción biomecánica, ayudando al pie en su funcionamiento natural. Porque cada pie tiene sus propias necesidades, Bauerfeind tiene más de 300 modelos distintos. Tenemos una plantilla adecuada para cada persona.",
-    storeLink: "https://kaldevi.com",
+    storeLink: "https://ortopedia.kaldevi.com/",
     srcModel: "/TV_ort_1.glb",
     images: [
         {
@@ -29,7 +30,7 @@ let pr1ZTOrtopedia = {
         {
             src: "/ot1/1.webp",
             title: "Exos DJO",
-            link: "https://kaldevi.es/ferulas-3d/",
+            link: "https://ortopedia.kaldevi.com/producto/ferula-3d-exos/",
         },
         {
             src: "/related/ot1_2.webp",
@@ -39,7 +40,7 @@ let pr1ZTOrtopedia = {
         {
             src: "/ot4/1.webp",
             title: "El soporte de mi abuelo",
-            link: "https://www.elsoportedemiabuelo.com/",
+            link: "https://ortopedia.kaldevi.com/",
         },
     ]
 }
@@ -47,8 +48,9 @@ let pr1ZTOrtopedia = {
 let pr2ZTOrtopedia = {
     room: "ztOrtopedia",
     title: "Exos DJO",
+    price: "Consultar precio",
     description: "En KALDEVI disponemos de férulas 3D. ¿En qué consisten? ¿Qué ventajas aportan estas férulas? Son la solución para que cualquier fractura sea muchísimo más cómoda, llevadera y ligera, ya que las férulas 3D permiten una total adaptación a las características de cada paciente. Es decir, son una solución a medida totalmente adaptables. Férulas 3D que sustituyen con garantías a las tradicionales escayolas. La férula 3D se puede ocultar perfectamente debajo de la ropa. Es decir, tenemos la posibilidad de contar con un producto que permite la total inmovilización del miembro afectado (logrando una recuperación más eficaz) y, a la vez, nos permite mantener nuestra rutina sin necesidad de alterar nuestro día a día. Su diseño hace posible que un médico pueda poner la férula y quitarla a lo largo del proceso recuperatorio, para examinar y controlar la evolución de la fractura o lesión. Esta es otra de sus grandes ventajas. Lo que, al final, se traduce en una recuperación más rápida y efectiva.",
-    storeLink: "https://kaldevi.es/ferulas-3d/",
+    storeLink: "https://ortopedia.kaldevi.com/producto/ferula-3d-exos/",
     srcModel: "/TV_ort_2.glb",
     images: [
         {
@@ -68,12 +70,12 @@ let pr2ZTOrtopedia = {
         {
             src: "/ot2/1.webp",
             title: "Plantillas Bauerfeind",
-            link: "https://kaldevi.com/",
+            link: "https://ortopedia.kaldevi.com/",
         },
         {
             src: "/ot3/1.webp",
             title: "Tobilleras Airloc",
-            link: "https://kaldevi.com",
+            link: "https://ortopedia.kaldevi.com/producto/tobillero-airloc/",
         },
         {
             src: "/related/ot2_3.webp",
@@ -86,8 +88,9 @@ let pr2ZTOrtopedia = {
 let pr3ZTOrtopedia = {
     room: "ztOrtopedia",
     title: "Tobillera Airloc",
+    price: "Consultar precio",
     description: "Después de una lesión grave, AirLoc, en combinación con un zapato, estabiliza el tobillo y lo protege de una nueva torcedura. Dos cubiertas de plástico acolchadas y con forma anatómica están conectadas elásticamente entre sí por debajo del talón para que la ortesis se adapte de forma óptima a la anchura del pie. Una cámara de aire hinchable en la carcasa exterior permite ajustar individualmente el AirLoc al correspondiente estado de hinchazón.",
-    storeLink: "https://kaldevi.com",
+    storeLink: "https://ortopedia.kaldevi.com/producto/tobillero-airloc/",
     srcModel: "/TV_ort_3.glb",
     images: [
         {
@@ -113,12 +116,12 @@ let pr3ZTOrtopedia = {
         {
             src: "/ot1/1.webp",
             title: "Exos DJO",
-            link: "https://kaldevi.es/ferulas-3d/",
+            link: "https://ortopedia.kaldevi.com/producto/ferula-3d-exos/",
         },
         {
             src: "/ot2/1.webp",
             title: "Plantillas Bauerfeind",
-            link: "https://kaldevi.com/",
+            link: "https://ortopedia.kaldevi.com/",
         },
         {
             src: "/related/ot3_3.webp",
@@ -132,8 +135,9 @@ let pr3ZTOrtopedia = {
 let pr4ZTOrtopedia = {
     room: "ztOrtopedia",
     title: "El Soporte de Mi Abuelo",
+    price: "41.24 €",
     description: "La finalidad de El Soporte de Mi Abuelo es que aquellas personas que sufran las consecuencias del paso de los años o la pérdida de movilidad puedan mejorar su calidad de vida, preservando su intimidad e independencia a la hora de vestirse. Porque el fin último del proyecto es que sea accesible a todos los bolsillos y que todo el que sufra de la necesidad que se pretende subsanar, pueda permitírselo. El fundador ilicitano, José María Almira, tras más de 40 años desde que inventó y comercializó el ya muy conocido pincho de la sombrilla, a sus 93 años ha creado un soporte de ayuda para la puesta de pañales, ropa interior y pantalones. Tras una caída de la mujer del inventor, la cual la dejó necesitada de ayuda externa para vestirse, como consecuencia de la imposibilidad de agacharse.",
-    storeLink: "https://www.elsoportedemiabuelo.com/",
+    storeLink: "https://ortopedia.kaldevi.com/",
     srcModel: "/TV_ort_4.glb",
     images: [
         {
@@ -163,7 +167,7 @@ let pr4ZTOrtopedia = {
         {
             src: "/ot2/1.webp",
             title: "Plantillas Bauerfeind",
-            link: "https://kaldevi.es/",
+            link: "https://ortopedia.kaldevi.com/",
         },
         {
             src: "/related/ot4_2.webp",

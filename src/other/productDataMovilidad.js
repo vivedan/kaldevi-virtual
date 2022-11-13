@@ -3,6 +3,7 @@
 let pr1ZTMovilidad = {
     room: "ztMovilidad",
     title: "Freedom Trax",
+    price: "Consultar precio",
     description: "Freedom Trax es la plataforma de Amodi que permite convertir una silla de ruedas manual en un TODOTERRENO con propulsión eléctrica…. Un único diseño versátil, robusto y de peso ligero, fabricado en aluminio, y que puede ser fácilmente transportado en el propio vehículo.",
     storeLink: "https://kaldevi.com/wp-content/uploads/2018/07/Plataforma-Todoterreno-FREEDOM-TRAX-ilovepdf-compressed.pdf",
     srcModel: "/TV_mov_1.glb",
@@ -34,7 +35,7 @@ let pr1ZTMovilidad = {
         {
             src: "/related/mov1_3.webp",
             title: "Scooter One A-5",
-            link: "https://kaldevi.com",
+            link: "https://ortopedia.kaldevi.com/sillas-de-ruedas/",
         },
     ]
 }
@@ -42,6 +43,7 @@ let pr1ZTMovilidad = {
 let pr2ZTMovilidad = {
     room: "ztMovilidad",
     title: "Silla de ruedas Sorolla",
+    price: "2.395,53 €",
     description: "Silla eléctrica de Obea, super-ligéra de aluminio, con baterías de lítio, y plegable para facilitar su transporte e introducción en vehículos. Con dimensiones reducidas para maniobrar en ascensores, domicilios, etc.",
     storeLink: "https://ortopedia.kaldevi.com/producto/silla-de-ruedas-electrica-sorolla/",
     srcModel: "/TV_mov_2.glb",
@@ -81,6 +83,7 @@ let pr2ZTMovilidad = {
 let pr3ZTMovilidad = {
     room: "ztMovilidad",
     title: "Grúa Sunlift Mini",
+    price: "754,54 €",
     description: "La grúa Sunlift Mini (130 kg) de Sunrise es fácil de manejar y tiene suficiente capacidad de elevación para cubrir las necesidades de cuidados en el hogar. Está diseñado para personas que necesitan un uso ligero, fácil de transportar o que tienen que moverse en poco espacio.",
     storeLink: "https://ortopedia.kaldevi.com/producto/grua-de-traslado-sunlift/",
     srcModel: "/TV_mov_3.glb",
@@ -126,9 +129,10 @@ let pr3ZTMovilidad = {
 
 let pr4ZTMovilidad = {
     room: "ztMovilidad",
-    title: "Andador deambulador Sucesores",
+    title: "Andador deambulador plegable",
+    price: "70,00 €",
     description: "Por sus características hace que el paciente no necesite levantar y soportar el peso del andador cuando camina, siendo más cómodo su uso.",
-    storeLink: "https://kaldevi.com/",
+    storeLink: "https://ortopedia.kaldevi.com/producto/andador-deambulador-plegable/",
     srcModel: "/TV_mov_4.glb",
     images: [
         {
@@ -144,17 +148,17 @@ let pr4ZTMovilidad = {
         {
             src: "/related/mov4_1.webp",
             title: "Andador Drako 1",
-            link: "https://kaldevi.com",
+            link: "https://ortopedia.kaldevi.com/producto/andador-drakon/",
         },
         {
             src: "/related/mov4_2.webp",
             title: "2221",
-            link: "https://kaldevi.com",
+            link: "https://ortopedia.kaldevi.com/producto/asiento-pvc-para-rollator-2221/",
         },
         {
             src: "/related/mov4_3.webp",
             title: "Air on plus",
-            link: "https://kaldevi.com",
+            link: "https://ortopedia.kaldevi.com/producto/andador-air-on-plus/",
         },
     ]
 }

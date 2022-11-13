@@ -96,44 +96,6 @@ function Room(props) {
                     <pointLight position={[10, 10, 10]} />
 
                     <Suspense fallback={null}>
-                            {/* <Model 
-                                position={[-70, -12.5, 50]} 
-                                rotation={[0, THREE.MathUtils.degToRad(45), 0]} 
-                                scale={8.1}
-                                setProjectSelected={setProjectSelected}
-                                projectSelected={projectSelected}
-                                setImageSelected={setImageSelected}
-                                /> */}
-                            {/* <Model 
-                                src="/TV_ort_1.glb"
-                                position={[82, -28.5, -52.5]} 
-                                rotation={[0, THREE.MathUtils.degToRad(-135), 0]} 
-                                scale={8.2}
-                                setProjectSelected={setProjectSelected}
-                                projectSelected={projectSelected}
-                                setImageSelected={setImageSelected}
-                                project={props.productData[0]}
-                            /> 
-                            <Model 
-                                src="/TV_ort_2.glb"
-                                position={[140, -28.5, 32]} 
-                                rotation={[0, THREE.MathUtils.degToRad(115), 0]} 
-                                scale={8.15}
-                                setProjectSelected={setProjectSelected}
-                                projectSelected={projectSelected}
-                                setImageSelected={setImageSelected}
-                                project={props.productData[1]}
-                            />
-                            <Model 
-                                src="/TV_ort_3.glb"
-                                position={[-56.5, -31, 70]} 
-                                rotation={[0, THREE.MathUtils.degToRad(70), 0]} 
-                                scale={8.8}
-                                setProjectSelected={setProjectSelected}
-                                projectSelected={projectSelected}
-                                setImageSelected={setImageSelected}
-                                project={props.productData[2]}
-                            />*/}
                             <group rotation={[0, THREE.MathUtils.degToRad(100), 0]}>
                                 <Model 
                                     src={props.productData[0].srcModel}

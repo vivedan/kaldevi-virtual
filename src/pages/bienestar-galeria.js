@@ -26,6 +26,13 @@ const IndexPage = () => {
 
   const [giro, setGiro] = useState(false);
 
+  const mainProduct = {
+    pretitle: "Sillón",
+    title: "Cocoon",
+    link: "https://ortopedia.kaldevi.com/producto/sillon-relax-cocoon/",
+    titlePos: [400, -110, -100],
+  }
+
   return (
     <div>
       <Overlay visible={loading}/>
@@ -44,7 +51,8 @@ const IndexPage = () => {
           detectorPosition={[85, -4, -25]}
           detectorRotation={[0, THREE.MathUtils.degToRad(-90), THREE.MathUtils.degToRad(-10)]}
           comments={commentsData}
-          commentColor={"yellow"}>
+          commentColor={"yellow"}
+          mainProduct={mainProduct}>
           <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[35, 0, -45]} dir={"Bienestar\nZona Técnica"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(-70), 0]} scale={5} to={"/bienestar-tecnica"} giro={giro}/>
           <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[35, -17, -25]} dir={"Movilidad\nGaleria"} textpos={"left"} rotation={[0, THREE.MathUtils.degToRad(-70), -Math.PI/2]} scale={5} to={"/movilidad-galeria"} giro={giro}/>
           <Arrow breakpoints={breakpoints} setLoading={setLoading} position={[-35, -6, -8]} dir={"Ortopedia\nGaleria"} textpos={"right"} rotation={[0, THREE.MathUtils.degToRad(55), -Math.PI/2]} scale={5} to={"/ortopedia-galeria"} giro={giro}/>

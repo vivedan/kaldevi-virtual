@@ -2,9 +2,10 @@
 
 let pr1ZTBienestar = {
     room: "ztBienestar",
-    title: "Cama ECO ",
+    title: "Cama ECO",
+    price: "Consultar precio",
     description: "Cama de FMB, apropiada para usuarios válidos y asistidos. Además de las articulaciones para respaldo y rodillas, dispone de CARRO ELEVADOR, que ayuda a la salida y entrada del usuario de la cama, además al cuidador a la tarea de hacer la cama, y adaptar la altura sin necesidad de forzar postura. También ayuda para la consulta de enfermería. Se le pueden añadir potencia y portasueros.",
-    storeLink: "https://kaldevi.com/producto/cama-geriatrica-geseko/",
+    storeLink: "https://ortopedia.kaldevi.com/camas-articuladas/",
     srcModel: "/TV_bien_1.glb",
     images: [
         {
@@ -50,6 +51,7 @@ let pr1ZTBienestar = {
 let pr2ZTBienestar = {
     room: "ztBienestar",
     title: "Sillón Cocoon",
+    price: "Consultar precio",
     description: "El sillón COCOON de Innovsa es muy cómodo y de múltiples posiciones. Se puede usar tanto en el hogar como en los centros sociosanitarios, debido a su revestimiento, fácil de limpiar.",
     storeLink: "https://ortopedia.kaldevi.com/producto/sillon-relax-cocoon/",
     srcModel: "/TV_bien_2.glb",
@@ -97,6 +99,7 @@ let pr2ZTBienestar = {
 let pr3ZTBienestar = {
     room: "ztBienestar",
     title: "Electroestimulador Genesy 1500",
+    price: "Consultar precio",
     description: "Electroestimulador Globus Genesy 1500 de 4 Canales Profesional, de Global. Genesy 1500 es extraordinariamente potente y seguro de utilizar en cualquier situación, además está equipado con todas las corrientes utilizadas en los campos médicos, rehabilitación y deportivo. Contiene un conjunto completo de programas para cada tipo de necesidad y todos los tipos de corrientes más comunes. 414 Programas.",
     storeLink: "https://kaldevi.com/producto/aparato-electroestimulacion-genesy-3000-rehab/",
     srcModel: "/TV_bien_3.glb",
@@ -146,8 +149,9 @@ let pr3ZTBienestar = {
 let pr4ZTBienestar = {
     room: "ztBienestar",
     title: "Silla de baño Clean",
+    price: "312,00 €",
     description: "La silla de ducha de Karinter es cómoda, segura y de fácil de manejo. Por su calidad, resistencia y fiabilidad, se recomienda para un uso intensivo y frecuente. Con 4 ruedas, 2 de ellas con freno y apertura del asiento por detrás, garantiza la máxima intimidad para el cuidador y el usuario.",
-    storeLink: "https://kaldevi.com/producto/silla-de-ducha-clean/",
+    storeLink: "https://ortopedia.kaldevi.com/sillas-de-ducha/",
     srcModel: "/TV_bien_4.glb",
     images: [
         {
@@ -180,12 +184,12 @@ let pr4ZTBienestar = {
         {
             src: "/related/bien4_2.webp",
             title: "Alza",
-            link: "https://kaldevi.com/",
+            link: "https://ortopedia.kaldevi.com/",
         },
         {
             src: "/related/bien4_3.webp",
             title: "Taburete",
-            link: "https://kaldevi.com/",
+            link: "https://ortopedia.kaldevi.com/",
         },
     ]
 }

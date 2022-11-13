@@ -208,7 +208,7 @@ h1, h2, h3, h4{
     top: 0;
     width: 35vw;
     height: 100vh;
-    background: linear-gradient(180deg, rgba(67, 67, 67, 0.841) 0%, rgba(109, 109, 109, 0.808) 100%);
+    background: linear-gradient(180deg, rgb(0 31 195 / 84%) 0%, rgba(109, 109, 109, 0.808) 100%);
     color: white;
     overflow-y: scroll;
 }
@@ -253,6 +253,7 @@ h1, h2, h3, h4{
 
 .productTitle{
     font-family: futura-pt, sans-serif;
+    font-size: 30px;
     font-weight: 700;
     font-style: normal;
 }
@@ -288,8 +289,21 @@ h1, h2, h3, h4{
     cursor: pointer;
 }
 
+.priceCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0 30px;
+}
+
+.productPrice{
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .relatedCont{
-    padding-bottom: 20px;
+    padding-bottom: 80px;
 }
 
 .imgRelatedCont{
@@ -300,7 +314,7 @@ h1, h2, h3, h4{
 }
 
 .imgRelated{
-    background: white;
+    background: rgb(255, 255, 255);
     height: 100px;
     width: 100px;
     opacity: 0.6;
@@ -312,7 +326,9 @@ h1, h2, h3, h4{
 }
 
 .titleRelated{
+    color: #006EAE;
     text-align: center;
+    text-shadow: -0.5px -0.5px 0 rgb(255, 255, 255), 0.5px -0.5px 0 rgb(255, 255, 255), -0.5px 0.5px 0 rgb(255, 255, 255), 0.5px 0.5px 0 rgb(255, 255, 255);
 }
 
 .imageInfoCont{
@@ -440,6 +456,24 @@ h1, h2, h3, h4{
     color: white;
     background: rgba(5, 5, 5, 0.1);
 } */
+
+.pretitleGaleria{
+    font-size: 30px;
+    font-family: le-monde-livre-classic-byol,serif;
+    font-style: italic;
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.titleGaleria{
+    font-size: 50px;
+    font-family: le-monde-livre-classic-byol,serif;
+    font-style: italic;
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin: 0;
+}
 
 .blurMainCont{
     position: absolute;
@@ -639,6 +673,13 @@ h1, h2, h3, h4{
         /* position: sticky; */
         z-index: 100000;
     }
+
+/*     .priceCont{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 0 30px;
+    } */
 
     .relatedContent{
         padding-bottom: 130px;

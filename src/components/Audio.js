@@ -4,12 +4,12 @@ import React, { useEffect, useRef} from 'react';
 function Audio({isActive, audio, setAudio}){
     const audioRef = useRef();
 
-    useEffect(() => {
+    /* useEffect(() => {
       if(!isActive){
         setAudio(true);
         
       }
-    }, [isActive])
+    }, [isActive]) */
   
   
     useEffect(() => {

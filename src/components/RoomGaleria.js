@@ -19,6 +19,7 @@ import Comment from './Comment';
 import CustomControls from './CustomControls';
 import AudioClick from './AudioClick';
 import UICircle from './UICircle';
+import ProductGallery from './ProductGallery';
 
 function Room(props) {
 
@@ -33,6 +34,7 @@ function Room(props) {
     const [blur, setBlur] = useState(false);
     const [firstClick, setFirstClick] = useState(false);
     const [clicked, setClicked] = useState(false);
+    let newTitlePos = [0, 0, 0];
 
     //DISCONNECT OVERLAYS AND BLUR BACKGROUND IF THE LIST OF ROOMS IS ACTIVE
     useEffect(() => {
@@ -95,6 +97,8 @@ function Room(props) {
                                                 <UICircle simple/>
                                     </group>
                                 </group>
+
+                                <ProductGallery product={props.mainProduct} color={props.commentColor} /* position={[400, 70, 0]} *//>
                                 
                                 <Dome panorama={props.panorama} overlay={overlay} clicked={clicked}>{props.children}</Dome>
                                 <DomeOverlay panorama={props.panoramaB} overlay={overlay} clicked={clicked}>{props.children}</DomeOverlay>
