@@ -30,7 +30,7 @@ module.exports = {
             options: {
                 queries: myCustomQueries,
             },
-          },/* 
+          },
           {
             resolve: `gatsby-plugin-manifest`,
             options: {
@@ -43,13 +43,13 @@ module.exports = {
               orientation: `landscape`,
               icons: [
                 {
-                  src: `/static/Kaldevi_Icon192.png`,
+                  src: `Kaldevi_Icon192.png`,
                   sizes: `192x192`,
                   type: `image/png`,
                 },
               ],
               description: `Showroom virtual de la empresa valenciana Kaldevi, con zonas de especialización orientadas a la ortopedia técnica, el bienestar y la movilidad.`,
             },
-          }, */
+          },
     ]
 }
