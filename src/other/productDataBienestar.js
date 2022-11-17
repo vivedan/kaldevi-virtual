@@ -81,7 +81,7 @@ let pr2ZTBienestar = {
         {
             src: "/related/bien2_1.webp",
             title: "Sillón Elisabeth",
-            link: "https://kaldevi.com/producto/butaca-descanso-elisabeth/",
+            link: "https://ortopedia.kaldevi.com/producto/sillon-relax-elisabeth/",
         },
         {
             src: "/related/bien2_2.webp",
@@ -130,17 +130,17 @@ let pr3ZTBienestar = {
         {
             src: "/related/bien3_1.webp",
             title: "Magnetoterapia Globus",
-            link: "https://kaldevi.com/",
+            link: "https://ortopedia.kaldevi.com/",
         },
         {
             src: "/related/bien3_2.webp",
             title: "Bandas elásticas",
-            link: "https://kaldevi.com/",
+            link: "https://ortopedia.kaldevi.com/",
         },
         {
             src: "/related/bien3_3.webp",
             title: "Pedallier",
-            link: "https://kaldevi.com/",
+            link: "https://ortopedia.kaldevi.com/",
         },
     ]
 }
@@ -151,7 +151,7 @@ let pr4ZTBienestar = {
     title: "Silla de baño Clean",
     price: "312,00 €",
     description: "La silla de ducha de Karinter es cómoda, segura y de fácil de manejo. Por su calidad, resistencia y fiabilidad, se recomienda para un uso intensivo y frecuente. Con 4 ruedas, 2 de ellas con freno y apertura del asiento por detrás, garantiza la máxima intimidad para el cuidador y el usuario.",
-    storeLink: "https://ortopedia.kaldevi.com/sillas-de-ducha/",
+    storeLink: "https://ortopedia.kaldevi.com/producto/silla-de-ducha-clean/",
     srcModel: "/TV_bien_4.glb",
     images: [
         {

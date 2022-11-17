@@ -35,7 +35,7 @@ let pr1ZTMovilidad = {
         {
             src: "/related/mov1_3.webp",
             title: "Scooter One A-5",
-            link: "https://ortopedia.kaldevi.com/sillas-de-ruedas/",
+            link: "https://ortopedia.kaldevi.com/sillas-de-ruedas-scooter/",
         },
     ]
 }
