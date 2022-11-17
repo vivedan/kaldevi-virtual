@@ -79,7 +79,7 @@ function Blur({page, blur, setBlur, children}) {
                     enableDeclineButton
                     flipButtons
                     acceptOnOverlayClick
-                    debug={true}
+                    debug={false}
                     >
                     Esta página web usa cookies. Este sitio web utiliza cookies técnicas que le permiten navegar por nuestra página web, así como cookies estadísticas que analizan el comportamiento de su navegación. A continuación, puede aceptar o rechazar la utilización de estas cookies.
                 </CookieConsent>
