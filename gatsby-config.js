@@ -51,5 +51,18 @@ module.exports = {
               description: `Showroom virtual de la empresa valenciana Kaldevi, con zonas de especialización orientadas a la ortopedia técnica, el bienestar y la movilidad.`,
             },
           },
+          {
+            resolve: `gatsby-plugin-gdpr-cookies`,
+            options: {
+              googleAnalytics: {
+                trackingId: 'G-QLLHEC90GG',
+                cookieName: "gatsby-gdpr-google-analytics",
+                // Setting this parameter is optional
+                anonymize: true
+              },
+              // Defines the environments where the tracking should be available  - default is ["production"]
+              environments: ['production', 'development']
+            },
+          },
     ]
 }
